@@ -1,4 +1,5 @@
 .container {
+  padding-top:100px;
   width: 80%;
   margin: auto;
 }
@@ -10,12 +11,14 @@
   flex-basis: 60%;
   padding: 40px 60px;
   border: 1px solid var(--everything);
+  border-radius: 10px 0 0 10px;
 }
 
 .contact-right {
   flex-basis: 40%;
   padding: 40px;
   background-color: var(--everything);
+  border-radius: 0 10px 10px 0;
 }
 
 .contact-right h3 {
@@ -62,11 +65,13 @@ label {
 
 .contactBTN {
   width: 100px;
-  border: none;
+  border: 1px solid var(--everything);
+  border-radius: 5px;
   outline: none;
   height: 35px;
   margin-top: 20px;
-  background-color: var(--everything);
+  background-color: none;
+  color:var(--everything);
 }
 
 table {

@@ -10,7 +10,7 @@
 }
 
 main {
-  padding-top: 10vh;
+  padding-top: 100px;
 }
 
 main h1 {
@@ -21,3 +21,34 @@ main h1 {
   text-align: right;
   padding: 0px 20px 0px 0px;
 }
+
+#about, #work, #contact{
+  height: 100vh;
+}
+
+#about{
+  margin-top: 10vh;
+}
+
+.info-display{
+  color: var(--everything);;
+}
+
+
+#information{
+  margin: 80vh 0 0 0;
+  width: 50vw;
+  height: 100px;
+}
+
+.GitHubBTN,.URL{
+  color: var(--everything);;
+  margin:60px 5px;
+  border: 1px solid var(--everything);;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+
+}
+
+
