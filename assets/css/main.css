@@ -51,4 +51,8 @@ main h1 {
 
 }
 
+button:hover, [type="submit"]:hover{
+  scale:1.025;
+}
+
 
