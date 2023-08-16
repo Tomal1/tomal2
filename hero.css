@@ -1,0 +1,20 @@
+.hero {
+  width: auto;
+  margin-bottom: 0px;
+  height: 80vh;
+  animation: fade-up 2s;
+  margin: 0 0 0 100px;
+  padding: 0 0 90px 0;
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(60px) scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}

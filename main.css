@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poopins", sans-serif;
+  scroll-behavior: smooth;
+  background-color: #303030;
+  color: white;
+  --everything: #cd5c5c;
+}
+
+main {
+  padding-top: 10vh;
+}
+
+main h1 {
+  color: var(--everything);
+  font-size: 50px;
+  height: 10vh;
+  width: 100%;
+  text-align: right;
+  padding: 0px 20px 0px 0px;
+}

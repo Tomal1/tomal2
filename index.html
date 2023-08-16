@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./nav.css" />
+    <link rel="stylesheet" href="./hero.css" />
+    <link rel="stylesheet" href="./accordion.css" />
+    <link rel="stylesheet" href="./gallery.css" />
+    <link rel="stylesheet" href="./contact.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <nav id="nav">
+      <a href="#about">about</a>
+      <a href="#work">work</a>
+      <a href="#contact">contact</a>
+      <a href="./resume.pdf" download>resume</a>
+    </nav>
+
+    <main>
+      <section id="about">
+        <h1>welcome to my page</h1>
+        <img src="./full.png" class="hero" />
+
+        <div class="accordion">
+          <div class="contentBx">
+            <div class="label">Objective</div>
+            <div class="content">
+              <p>
+                Hi my name is Tomal, I like building websites and now I am
+                looking for a web develoment job.
+              </p>
+            </div>
+          </div>
+          <div class="contentBx">
+            <div class="label">Motivation</div>
+            <div class="content">
+              <p>
+                The thrill of solving a mystery, then finding a better way to
+                solve it or rebuild somthing after breaking it to find out how
+                it works lol.
+              </p>
+            </div>
+          </div>
+          <div class="contentBx">
+            <div class="label">Technolagies</div>
+            <div class="content">
+              <p>
+                I most commonly use but not limited to the following
+                technolagies: HTML, CSS, JS, React, Node, Express & MariaDB.
+                <br />
+                <br />
+                Other technolagies include: CLI, Git, GitHub & Imsomnia
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="work">
+        <div class="gallery">
+          <div class="gallery-container">
+            <img
+              class="gallery-item gallery-item-1"
+              src="./RPS.png"
+              data-index="1"
+            />
+            <img
+              class="gallery-item gallery-item-2"
+              src="./WDS.png"
+              data-index="2"
+            />
+            <img
+              class="gallery-item gallery-item-3"
+              src="./weather.png"
+              data-index="3"
+            />
+            <img
+              class="gallery-item gallery-item-4"
+              src="./profile.png"
+              data-index="4"
+            />
+            <img
+              class="gallery-item gallery-item-5"
+              src="./tdl.png"
+              data-index="5"
+            />
+          </div>
+          <div class="gallery-controls"></div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <h2>connect with Us</h2>
+          <p>we would love to hear from you</p>
+          <div class="contact-box">
+            <div class="contact-left">
+              <h3>sent you request</h3>
+
+              <form>
+                <div class="input-row">
+                  <div class="input-group">
+                    <label>Name</label>
+                    <input
+                      class="clintInp"
+                      type="text"
+                      placeholder="Jhon doe"
+                    />
+                  </div>
+                  <div class="input-group">
+                    <label>phone</label>
+                    <input
+                      class="clintInp"
+                      type="tel"
+                      placeholder="0208 xxx xxxx"
+                    />
+                  </div>
+                </div>
+                <div class="input-row">
+                  <div class="input-group">
+                    <label>Email</label>
+                    <input
+                      class="clintInp"
+                      type="email"
+                      placeholder="email add"
+                    />
+                  </div>
+                  <div class="input-group">
+                    <label>subject</label>
+                    <input
+                      class="clintInp"
+                      type="text"
+                      placeholder="example title"
+                    />
+                  </div>
+                </div>
+
+                <label>Message</label>
+                <textarea rows="5" placeholder="your message"></textarea>
+                <button class="contactBTN" type="submit">Send</button>
+              </form>
+            </div>
+            <div class="contact-right">
+              <h3>reach us</h3>
+              <table>
+                <tr>
+                  <td>Email</td>
+                  <td>Minhazulislam@hotmail.com</td>
+                </tr>
+                <tr>
+                  <td>Phone</td>
+                  <td>07925849695</td>
+                </tr>
+                <tr>
+                  <td>Location</td>
+                  <td>Halesowen, B62</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>

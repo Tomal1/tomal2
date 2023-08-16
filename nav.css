@@ -1,0 +1,32 @@
+nav {
+  margin-top: 0px;
+  position: fixed;
+  background-color: var(--everything);
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 1;
+  padding: 0px 20px 0px 0px;
+}
+
+nav a {
+  text-decoration: none;
+  background: none;
+  margin: 10px;
+  font-size: 20px;
+}
+
+nav.sticky {
+  height: 5vh;
+}
+
+nav:hover {
+  height: 10vh;
+  transition: 0.5s;
+}
+
+nav:not(:hover) {
+  transition: 0.5s;
+}
