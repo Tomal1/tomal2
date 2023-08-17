@@ -150,3 +150,17 @@
 .gallery-nav li.gallery-item-selected {
   background: #555;
 }
+.GitHubBTN,
+.URL {
+  color: var(--everything);
+  margin: 30px 5px;
+  border: 1px solid var(--everything);
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover,
+[type="submit"]:hover {
+  scale: 1.025;
+}

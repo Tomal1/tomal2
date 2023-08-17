@@ -22,37 +22,22 @@ main h1 {
   padding: 0px 20px 0px 0px;
 }
 
-#about, #work, #contact{
+#about,
+#work,
+#contact {
   height: 100vh;
 }
 
-#about{
-  margin-top: 10vh;
+
+.info-display {
+  color: var(--everything);
 }
 
-.info-display{
-  color: var(--everything);;
-}
-
-
-#information{
+#information {
   margin: 80vh 0 0 0;
-  width: 50vw;
-  height: 100px;
-}
+  width: 80vw;
+  height: 0px;
 
-.GitHubBTN,.URL{
-  color: var(--everything);;
-  margin:60px 5px;
-  border: 1px solid var(--everything);;
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 5px;
-
-}
-
-button:hover, [type="submit"]:hover{
-  scale:1.025;
 }
 
 

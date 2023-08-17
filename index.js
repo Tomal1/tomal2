@@ -12,15 +12,12 @@ for (let i = 0; i < accordion.length; i++) {
     this.classList.toggle("active");
   });
 }
-
 //carousl
 
 const infoCon = document.querySelector("#information");
 const infoDisplay = document.querySelector(".info-display");
-
 const gitHubBTN = document.querySelector(".GitHubBTN");
 const Url = document.querySelector(".URL");
-
 const galleryContainer = document.querySelector(".gallery-container");
 const galleryControlsContainer = document.querySelector(".gallery-controls");
 const galleryControls = ["previous", "next"];
@@ -46,9 +43,8 @@ class Carousel {
       el.classList.add(`gallery-item-${i + 1}`);
     });
 
-    const frontPic = document.querySelector(".gallery-item-3");
-
-    //thi is how we store to local storage
+    const frontPic = document.querySelector(".gallery-item-3"); //selects first image we see via class
+    //turns that elemnt attribute into a number
     const target = parseInt(frontPic.getAttribute("data-index"));
 
     const info = [
@@ -71,8 +67,7 @@ class Carousel {
         URL: "https://tomal1.github.io/6_weather_app/",
       },
       {
-        message:
-          "4) this is another profile which uses react",
+        message: "4) this is another profile which uses react",
         gitHub: "https://github.com/Tomal1/tomal",
         URL: "https://tomal1.github.io/tomal/",
       },
@@ -84,8 +79,7 @@ class Carousel {
       },
     ];
 
-    for (let i = 2; i < info.length; i++) {
-      // must be turned once
+    for (let i = 0; i < info.length; i++) {
       infoDisplay.textContent = info[target - 1].message;
       gitHubBTN.onclick = () =>
         (window.location = `${info[target - 1].gitHub}`);
@@ -134,3 +128,4 @@ const exampleCarousel = new Carousel(
 
 exampleCarousel.setControls();
 exampleCarousel.useControls();
+exampleCarousel.updateGallery(); // invoes the function inside of the class so certain things are displayed
