@@ -52,30 +52,29 @@ class Carousel {
     const info = [
       {
         message:
-          "1) Play Rock, Paper and Scissors against the computer; the functionality of this fun little application was made using; HTML, CSS and vanilla JavaScript.",
+          "Play Rock, Paper and Scissors against the computer; the functionality of this fun little application was made using; HTML, CSS and vanilla JavaScript.",
         gitHub: "https://github.com/Tomal1/Rock-Paper-and-Scissors",
         URL: "https://tomal1.github.io/Rock-Paper-and-Scissors/",
       },
       {
         message:
-          "2) This is a calendar application that allow the client to save entries dor different hours throughout a working day. It tracks the current time and then color codes the calender depending on certain conditions or criteria. There is a button next to each entry section which allows the client to append notes next to the appropriate time slot.",
+          "This is a calendar application that allow the client to save entries dor different hours throughout a working day. It tracks the current time and then color codes the calender depending on certain conditions or criteria. There is a button next to each entry section which allows the client to append notes next to the appropriate time slot.",
         gitHub: "https://github.com/Tomal1/Work-Day-Scheduler",
         URL: "https://tomal1.github.io/Work-Day-Scheduler/",
       },
       {
         message:
-          "3) When a city name is inputted; the next 5 day weather conditions will be forecasted onto little cards situated in the middle of the screen. The app uses the input and appends it to the API url to extrapolate all relevant data (such as temperature, date, wind speed ect..) to populate the cards.",
+          "When a city name is inputted; the next 5 day weather conditions will be forecasted onto little cards situated in the middle of the screen. The app uses the input and appends it to the API url to extrapolate all relevant data (such as temperature, date, wind speed ect..) to populate the cards.",
         gitHub: "https://github.com/Tomal1/6_weather_app",
         URL: "https://tomal1.github.io/6_weather_app/",
       },
       {
-        message: "4) this is another personal profile which uses react which I made erlier,",
+        message: "Another personal profile using react, the app has been heavily influenced from a YouTube video however one that I wanted to build from scratch, a fantastic way to learn react non the less.",
         gitHub: "https://github.com/Tomal1/tomal",
         URL: "https://tomal1.github.io/tomal/",
       },
       {
-        message:
-          "5) This is a simple to do list however it incoporates client, server, database technolagies to demonstate full stack capabilities; the technolages used include HTML,CSS,JS, Node, Express and MariaDB. Note: this project has not been deployed but can be run on local machine",
+        message:"This is a full stack to do list, the technologies used to build this app include: HTML,CSS,JS, Node, Express and MariaDB. Note: this app has not been deployed but can be run on local machine.",
         gitHub: "https://github.com/Tomal1/to-do-list-CRUD2",
         URL: "#",
       },
