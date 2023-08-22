@@ -1,3 +1,4 @@
+
 //shrinking nav bar on scroll
 const nav = document.querySelector("#nav");
 const accordion = document.querySelectorAll(".contentBx");
@@ -43,9 +44,10 @@ class Carousel {
       el.classList.add(`gallery-item-${i + 1}`);
     });
 
-    const frontPic = document.querySelector(".gallery-item-3"); //selects first image we see via class
+    const frontPic = document.querySelector(".gallery-item-3"); //selects first image we see
     //turns that elemnt attribute into a number
     const target = parseInt(frontPic.getAttribute("data-index"));
+
 
     const info = [
       {
@@ -67,19 +69,20 @@ class Carousel {
         URL: "https://tomal1.github.io/6_weather_app/",
       },
       {
-        message: "4) this is another profile which uses react",
+        message: "4) this is another personal profile which uses react which I made erlier,",
         gitHub: "https://github.com/Tomal1/tomal",
         URL: "https://tomal1.github.io/tomal/",
       },
       {
         message:
-          "5) This is a simple to do list however it incoporates client, server, database technolagies to demonstate full stack capabilities; the technolages used include HTML,CSS,JS, Node, Express and MariaDB.",
+          "5) This is a simple to do list however it incoporates client, server, database technolagies to demonstate full stack capabilities; the technolages used include HTML,CSS,JS, Node, Express and MariaDB. Note: this project has not been deployed but can be run on local machine",
         gitHub: "https://github.com/Tomal1/to-do-list-CRUD2",
         URL: "#",
       },
     ];
 
     for (let i = 0; i < info.length; i++) {
+
       infoDisplay.textContent = info[target - 1].message;
       gitHubBTN.onclick = () =>
         (window.location = `${info[target - 1].gitHub}`);
@@ -128,4 +131,4 @@ const exampleCarousel = new Carousel(
 
 exampleCarousel.setControls();
 exampleCarousel.useControls();
-exampleCarousel.updateGallery(); // invoes the function inside of the class so certain things are displayed
+exampleCarousel.updateGallery(); // accessing our class (Carousel) and then invoking a function (updateGalary)

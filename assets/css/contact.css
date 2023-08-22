@@ -1,5 +1,5 @@
 .container {
-  padding-top:100px;
+  padding-top: 100px;
   width: 80%;
   margin: auto;
 }
@@ -71,7 +71,7 @@ label {
   height: 35px;
   margin-top: 20px;
   background-color: none;
-  color:var(--everything);
+  color: var(--everything);
 }
 
 table {
