@@ -1,4 +1,3 @@
-
 //shrinking nav bar on scroll
 const nav = document.querySelector("#nav");
 const accordion = document.querySelectorAll(".contentBx");
@@ -48,7 +47,6 @@ class Carousel {
     //turns that elemnt attribute into a number
     const target = parseInt(frontPic.getAttribute("data-index"));
 
-
     const info = [
       {
         message:
@@ -69,19 +67,20 @@ class Carousel {
         URL: "https://tomal1.github.io/6_weather_app/",
       },
       {
-        message: "Another personal profile using react, the app has been heavily influenced from a YouTube video however one that I wanted to build from scratch, a fantastic way to learn react non the less.",
+        message:
+          "Another personal profile using react, the app has been heavily influenced from a YouTube video however one that I wanted to build from scratch, a fantastic way to learn react non the less.",
         gitHub: "https://github.com/Tomal1/tomal",
         URL: "https://tomal1.github.io/tomal/",
       },
       {
-        message:"This is a full stack to do list, the technologies used to build this app include: HTML,CSS,JS, Node, Express and MariaDB. Note: this app has not been deployed but can be run on local machine.",
+        message:
+          "This is a full stack to do list, the technologies used to build this app include: HTML,CSS,JS, Node, Express and MariaDB. Note: this app has not been deployed but can be run on local machine.",
         gitHub: "https://github.com/Tomal1/to-do-list-CRUD2",
         URL: "#",
       },
     ];
 
     for (let i = 0; i < info.length; i++) {
-
       infoDisplay.textContent = info[target - 1].message;
       gitHubBTN.onclick = () =>
         (window.location = `${info[target - 1].gitHub}`);
