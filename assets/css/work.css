@@ -150,6 +150,19 @@
 .gallery-nav li.gallery-item-selected {
   background: #555;
 }
+
+.info-display {
+  color: white;
+}
+
+#information {
+  margin: 80vh 0 0 0;
+  width: 80vw;
+  height: 0px;
+}
+
+
+
 .GitHubBTN,
 .URL {
   color: var(--everything);
@@ -163,4 +176,7 @@
 button:hover,
 [type="submit"]:hover {
   scale: 1.025;
+  border-color: white;
+  transition: 0.5s;
 }
+

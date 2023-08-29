@@ -1,41 +1,19 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
-  font-family: "poopins", sans-serif;
+  font-family: "gorock brush", sans-serif;
   scroll-behavior: smooth;
   background-color: #303030;
+  /* background-image: url("../images/dark-black-texture-background.jpg"); */
   color: white;
   --everything: #cd5c5c;
-}
-
-main {
-  padding-top: 100px;
-}
-
-main h1 {
-  color: var(--everything);
-  font-size: 50px;
-  height: 10vh;
-  width: 100%;
-  text-align: right;
-  padding: 0px 20px 0px 0px;
 }
 
 #about,
 #work,
 #contact {
   height: 100vh;
-}
-
-.info-display {
-  color: var(--everything);
-}
-
-#information {
-  margin: 80vh 0 0 0;
-  width: 80vw;
-  height: 0px;
 }
 
 nav {
@@ -58,6 +36,11 @@ nav a {
   font-size: 20px;
 }
 
+nav a:hover {
+  transition: 0.5s;
+  color: #303030;
+}
+
 nav.sticky {
   height: 5vh;
 }
@@ -70,4 +53,3 @@ nav:hover {
 nav:not(:hover) {
   transition: 0.5s;
 }
-
