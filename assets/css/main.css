@@ -4,10 +4,10 @@
   box-sizing: border-box;
   font-family: "gorock brush", sans-serif;
   scroll-behavior: smooth;
-  background-color: #303030;
-  /* background-image: url("../images/dark-black-texture-background.jpg"); */
+  --dominant:#303030;
   color: white;
   --everything: #cd5c5c;
+  background-color: var(--dominant);
 }
 
 #about,
@@ -15,6 +15,7 @@
 #contact {
   height: 100vh;
 }
+
 
 nav {
   margin-top: 0px;
@@ -25,8 +26,8 @@ nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  z-index: 1;
   padding: 0px 20px 0px 0px;
+  z-index: 3;
 }
 
 nav a {
@@ -38,7 +39,7 @@ nav a {
 
 nav a:hover {
   transition: 0.5s;
-  color: #303030;
+  color: var(--dominant);
 }
 
 nav.sticky {
