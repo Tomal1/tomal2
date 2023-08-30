@@ -3,11 +3,15 @@
   color: var(--everything);
   font-size: 50px;
   height: 10vh;
-  width: 100%;
   text-align: right;
   padding: 20vh 20px 0px 0px;
-  
+
 }
+
+#about .h1-con{
+  border:1px solid green
+}
+
 
 .accordion {
   float: right;
@@ -108,7 +112,7 @@
   
   .accordion {
     float: none;
-    width: 500px;
+    width: 580px;
     margin: 100px auto;
   }
   main h1 {
