@@ -164,19 +164,24 @@
 
 
 .GitHubBTN,
-.URL {
+.URL,
+.dlResume {
   color: var(--everything);
   margin: 30px 5px;
   border: 1px solid var(--everything);
   padding: 10px;
   cursor: pointer;
   border-radius: 5px;
+  text-decoration: none;
 }
 
+
 button:hover,
-[type="submit"]:hover {
+[type="submit"]:hover,
+.dlResume:hover {
   scale: 1.025;
   border-color: white;
   transition: 0.5s;
 }
+
 

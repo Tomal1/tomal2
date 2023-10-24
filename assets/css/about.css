@@ -8,72 +8,60 @@
 
 }
 
-.accordion {
-  float: right;
-  width: 1100px;
-  margin: 100px 0px 0px 0px;
+figure{
+  margin: auto;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  
 }
 
-.accordion .contentBx {
-  position: relative;
-  margin: 10px 20px;
-}
-
-.accordion .contentBx .label {
-  position: relative;
-  padding: 10px;
-  background-color: var(--everything);
-  cursor: pointer;
-}
-
-.accordion .contentBx .label::before {
-  content: "+";
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
-  font-size: 1.5em;
-}
-
-.accordion .contentBx.active .label::before {
-  content: "-";
-}
-
-.accordion .contentBx .content {
-  position: relative;
-  height: 0;
-  overflow: hidden;
-  transition: 0.5s;
-  overflow-y: auto;
-}
-
-.accordion .contentBx.active .content {
+figure figcaption .heroCaption{
+  width: 80%;
   height: 100px;
-  padding: 10px;
+  margin: 0px 0px 200px 20px;
+  color: white;
 }
 
-.contentBx {
-  animation: charge-in 2s;
+figure figcaption{
+  text-align: center;
+  width: 70%;
+  height: 100px;
+  margin: 200px -320px;
+  background-color: transparent;
 }
 
-@keyframes charge-in {
-  0% {
-    opacity: 0;
-    transform: translateX(60px) scale(0.9);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0px) scale(1);
-  }
-}
+/* figure .dlResume{
+  margin: -700px 0px 0px 200px;
+  
+} */
 
 
 .hero {
   width: auto;
   height: 80vh;
   animation: fade-up 2s;
-  margin: 0 0 0 100px;
+  background-color: var(--everything);  
+  border-radius: 10px;
+  border:3px solid white;
+}
+
+.heroHeaders{
+  list-style: none;
+  display: inline;
+  margin: 0px 20px 0px 20px;
+  position: relative;
+  top: 150px;
+  color: var(--everything);
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.heroHeaders:hover{
+  color: white;
+  transition: 0.5s;
+
 }
 
 @keyframes fade-up {
