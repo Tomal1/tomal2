@@ -141,18 +141,26 @@ const aboutInfo = {
 
 for (let i = 0; i < heroHeaders.length; i++) {
   heroCaption.textContent = aboutInfo.AboutMe;
+  heroHeaders[0].style.color = "white"
+  heroHeaders[1].style.color = "var(--everything)"
+  heroHeaders[2].style.color = "var(--everything)"
 
   heroHeaders[i].addEventListener("click", (e) => {
     if (e.target.innerHTML === "about me") {
       heroCaption.textContent = aboutInfo.AboutMe;
-    }
-
-    if (e.target.innerHTML === "tecnolagies") {
+      heroHeaders[0].style.color = "white"
+      heroHeaders[1].style.color = "var(--everything)"
+      heroHeaders[2].style.color = "var(--everything)"
+    } else if (e.target.innerHTML === "tecnolagies") {
       heroCaption.textContent = aboutInfo.Technolagies;
-    }
-
-    if (e.target.innerHTML === "interests") {
+      heroHeaders[1].style.color = "white"
+      heroHeaders[0].style.color = "var(--everything)"
+      heroHeaders[2].style.color = "var(--everything)"
+    } else if (e.target.innerHTML === "interests") {
       heroCaption.textContent = aboutInfo.Interest;
+      heroHeaders[2].style.color = "white"
+      heroHeaders[0].style.color = "var(--everything)"
+      heroHeaders[1].style.color = "var(--everything)"
     }
   });
 }

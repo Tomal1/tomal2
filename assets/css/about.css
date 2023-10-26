@@ -1,3 +1,23 @@
+.mainPic{
+  border: 3px solid white;
+  background-color: var(--everything);
+  height: 435px;
+  width: 418px;
+  margin:95px 0px 0px 100px;
+  border-radius: 20px;
+  
+
+}
+
+.rad{
+  height: 550px;
+  border-radius: 20px;
+  margin: -121px 0px;
+  width: auto;
+  background-color: transparent;
+}
+
+
 
 #about h1 {
   color: var(--everything);
@@ -31,20 +51,30 @@ figure figcaption{
   background-color: transparent;
 }
 
-/* figure .dlResume{
-  margin: -700px 0px 0px 200px;
-  
-} */
+figure .dlResume{
+  position: relative;
+  right: 490px;
+  margin: 300px 0px 0px 0px;
+  height:35px
+}
+
+.heroBorder{
+  border: 3px solid white;
+  border-radius: 20px;
+  height: 75vh;
+  background-color: var(--everything); 
+}
 
 
 .hero {
   width: auto;
-  height: 80vh;
-  animation: fade-up 2s;
-  background-color: var(--everything);  
-  border-radius: 10px;
-  border:3px solid white;
+  height: 85vh;
+  border-radius: 20px;
+  background: transparent;
+  margin-top: -25px;
 }
+
+
 
 .heroHeaders{
   list-style: none;
@@ -52,54 +82,13 @@ figure figcaption{
   margin: 0px 20px 0px 20px;
   position: relative;
   top: 150px;
-  color: var(--everything);
   padding: 10px;
   cursor: pointer;
   border-radius: 5px;
 }
 
-.heroHeaders:hover{
-  color: white;
-  transition: 0.5s;
-
-}
-
-@keyframes fade-up {
-  0% {
-    opacity: 0;
-    transform: translateY(60px) scale(0.9);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0px) scale(1);
-  }
-}
 
 
 .gg-mail,.gg-phone, .gg-pin {
     background: none;
-}
-
-@media (max-width:1330px){
-  .accordion {
-    width: 800px;
-  }
-
-}
-
-@media (max-width:1100px){
-  .hero {
-    display: none;
-  }
-  
-  .accordion {
-    float: none;
-    width: 580px;
-    margin: 100px auto;
-  }
-  main h1 {
-    text-align: center;
-  }
-
 }
