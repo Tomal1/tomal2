@@ -11,15 +11,6 @@
 }
 
 
-#landing h1 {
-  color: var(--everything);
-  font-size: 50px;
-  height: 10vh;
-  text-align: right;
-  padding: 20vh 20px 0px 0px;
-
-}
-
 #landing,
 #about,
 #work,

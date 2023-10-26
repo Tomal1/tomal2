@@ -1,0 +1,25 @@
+#landing h1 {
+    color: var(--everything);
+    font-size: 50px;
+    height: 10vh;
+    text-align: right;
+    padding: 20vh 150px 0px 0px;
+  
+  }
+
+.landingPic{
+    border: 3px solid white;
+    background-color: var(--everything);
+    height: 435px;
+    width: 418px;
+    margin:95px 0px 0px 100px;
+    border-radius: 20px;
+  }
+  
+  .rad2{
+    height: 550px;
+    border-radius: 20px;
+    margin: -121px 0px;
+    width: auto;
+    background-color: transparent;
+  }
