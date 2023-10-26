@@ -1,3 +1,11 @@
+#work h1{
+  color: var(--everything);
+  font-size: 50px;
+  height: 10vh;
+  text-align: right;
+  padding: 20vh 150px 0px 0px;
+}
+
 .gallery {
   margin: auto;
   width: 80%;
@@ -152,6 +160,7 @@
 }
 
 .info-display {
+  
   color: white;
 }
 
@@ -184,4 +193,8 @@ button:hover,
   transition: 0.5s;
 }
 
+.btn-div{
+  margin: -110px;
+  text-align: center;
+}
 
