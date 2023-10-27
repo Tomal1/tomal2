@@ -1,4 +1,4 @@
-#work h1{
+#work h1 {
   color: var(--everything);
   font-size: 50px;
   height: 10vh;
@@ -160,7 +160,6 @@
 }
 
 .info-display {
-  
   color: white;
 }
 
@@ -169,8 +168,6 @@
   width: 80vw;
   height: 0px;
 }
-
-
 
 .GitHubBTN,
 .URL,
@@ -184,7 +181,6 @@
   text-decoration: none;
 }
 
-
 button:hover,
 [type="submit"]:hover,
 .dlResume:hover {
@@ -193,8 +189,7 @@ button:hover,
   transition: 0.5s;
 }
 
-.btn-div{
+.btn-div {
   margin: -110px;
   text-align: center;
 }
-

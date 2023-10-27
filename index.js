@@ -1,10 +1,11 @@
 //shrinking nav bar on scroll
 const nav = document.querySelector("#nav");
-const accordion = document.querySelectorAll(".contentBx");
 
 const heroCaption = document.querySelector(".heroCaption");
 
 const heroHeaders = document.querySelectorAll(".heroHeaders");
+
+const text = document.querySelector(".sec-text");
 
 window.addEventListener("scroll", () => {
   nav.classList.toggle("sticky", window.scrollY > 200);
@@ -141,48 +142,42 @@ const aboutInfo = {
 
 for (let i = 0; i < heroHeaders.length; i++) {
   heroCaption.textContent = aboutInfo.AboutMe;
-  heroHeaders[0].style.color = "white"
-  heroHeaders[1].style.color = "var(--everything)"
-  heroHeaders[2].style.color = "var(--everything)"
+  heroHeaders[0].style.color = "white";
+  heroHeaders[1].style.color = "var(--everything)";
+  heroHeaders[2].style.color = "var(--everything)";
 
   heroHeaders[i].addEventListener("click", (e) => {
     if (e.target.innerHTML === "about me") {
       heroCaption.textContent = aboutInfo.AboutMe;
-      heroHeaders[0].style.color = "white"
-      heroHeaders[1].style.color = "var(--everything)"
-      heroHeaders[2].style.color = "var(--everything)"
+      heroHeaders[0].style.color = "white";
+      heroHeaders[1].style.color = "var(--everything)";
+      heroHeaders[2].style.color = "var(--everything)";
     } else if (e.target.innerHTML === "tecnolagies") {
       heroCaption.textContent = aboutInfo.Technolagies;
-      heroHeaders[1].style.color = "white"
-      heroHeaders[0].style.color = "var(--everything)"
-      heroHeaders[2].style.color = "var(--everything)"
+      heroHeaders[1].style.color = "white";
+      heroHeaders[0].style.color = "var(--everything)";
+      heroHeaders[2].style.color = "var(--everything)";
     } else if (e.target.innerHTML === "interests") {
       heroCaption.textContent = aboutInfo.Interest;
-      heroHeaders[2].style.color = "white"
-      heroHeaders[0].style.color = "var(--everything)"
-      heroHeaders[1].style.color = "var(--everything)"
+      heroHeaders[2].style.color = "white";
+      heroHeaders[0].style.color = "var(--everything)";
+      heroHeaders[1].style.color = "var(--everything)";
     }
   });
 }
 
-//funcationality for anmated text
+//funcationality for anmated text on landing page
 
-const text = document.querySelector(".sec-text");
-
-const textLord = () =>{
-  setTimeout(()=>{
+const textLord = () => {
+  setTimeout(() => {
     text.textContent = "Hi my name is Tomal";
-
   }, 0);
-  setTimeout(()=>{
+  setTimeout(() => {
     text.textContent = "I am a Web devloper";
-
   }, 5000);
-  setTimeout(()=>{
+  setTimeout(() => {
     text.textContent = "Please take a look below";
-
   }, 10000);
-  
-}
+};
 textLord();
 setInterval(textLord, 15000);
