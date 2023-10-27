@@ -15,25 +15,29 @@
   border-radius: 20px;
 }
 
+#landing .rad2 {
+  height: 550px;
+  border-radius: 20px;
+  margin: -121px 0px;
+  width: auto;
+  background-color: transparent;
+}
+
 #landing .container {
   margin: -50vh 0 0 600px;
   width: 800px;
   display: flex;
-  justify-content: center;
+  justify-content: start;
 }
 
-.container .text {
+#landing .container .text {
   position: relative;
   color: var(--everything);
   font-size: 80px;
   font-weight: 500;
 }
 
-.container .text.first-text {
-  color: #fff;
-}
-
-.text.sec-text:before {
+#landing .container .text.sec-text:before {
   content: "";
   position: absolute;
   top: 0;
@@ -53,12 +57,4 @@
   100% {
     left: 0%;
   }
-}
-
-.rad2 {
-  height: 550px;
-  border-radius: 20px;
-  margin: -121px 0px;
-  width: auto;
-  background-color: transparent;
 }
