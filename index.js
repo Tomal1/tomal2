@@ -164,3 +164,25 @@ for (let i = 0; i < heroHeaders.length; i++) {
     }
   });
 }
+
+//funcationality for anmated text
+
+const text = document.querySelector(".sec-text");
+
+const textLord = () =>{
+  setTimeout(()=>{
+    text.textContent = "Hi my name is Tomal";
+
+  }, 0);
+  setTimeout(()=>{
+    text.textContent = "I am a Web devloper";
+
+  }, 5000);
+  setTimeout(()=>{
+    text.textContent = "Please take a look below";
+
+  }, 10000);
+  
+}
+textLord();
+setInterval(textLord, 15000);

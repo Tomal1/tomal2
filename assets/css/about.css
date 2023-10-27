@@ -30,9 +30,7 @@ figure figcaption{
 }
 
 figure .dlResume{
-  position: relative;
-  right: 490px;
-  margin: 300px 0px 0px 0px;
+  margin: 300px 0px 0px -480px;
   height:35px
 }
 
@@ -49,7 +47,7 @@ figure .dlResume{
   height: 85vh;
   border-radius: 20px;
   background: transparent;
-  margin-top: -25px;
+  margin: -25px 0 0 0;
 }
 
 
@@ -64,8 +62,6 @@ figure .dlResume{
   cursor: pointer;
   border-radius: 5px;
 }
-
-
 
 .gg-mail,.gg-phone, .gg-pin {
     background: none;

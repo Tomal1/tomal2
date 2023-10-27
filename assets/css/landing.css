@@ -7,13 +7,54 @@
   
   }
 
-.landingPic{
+#landing .landingPic{
     border: 3px solid white;
     background-color: var(--everything);
     height: 435px;
     width: 418px;
-    margin:95px 0px 0px 100px;
+    margin:95px 0px 0px 145px;
     border-radius: 20px;
+  }
+
+  #landing .container{
+    margin: -50vh 0 0 600px;
+    width:800px;
+    display: flex;
+    justify-content: center;
+ 
+  }
+  
+  .container .text{
+    position: relative;
+    color: var(--everything);
+    font-size:  80px;
+    font-weight: 500;
+
+  }
+
+  .container .text.first-text{
+    color: #FFF;
+  }
+
+   .text.sec-text:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--dominant);
+    border-left:2px solid white;
+    animation: animate 5s steps(20) infinite;
+  }
+
+  @keyframes animate{
+    40%, 60%{
+        left:100%;
+    }
+    100%{
+        left:0%;
+    }
   }
   
   .rad2{
