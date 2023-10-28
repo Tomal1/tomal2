@@ -30,8 +30,9 @@ figure figcaption{
 }
 
 figure .dlResume{
-  margin: 300px 0px 0px -480px;
-  height:35px
+ 
+  margin:300px 0px 0px -480px;
+  height:35px;
 }
 
 .heroBorder{
@@ -50,17 +51,17 @@ figure .dlResume{
   margin: -25px 0 0 0;
 }
 
-
+.heroHeaderCon{
+  height: 50px;
+  margin: 150px 0 0 0px;
+}
 
 .heroHeaders{
   list-style: none;
   display: inline;
-  margin: 0px 20px 0px 20px;
-  position: relative;
-  top: 150px;
+  margin: 100px 20px 0px 20px;
   padding: 10px;
   cursor: pointer;
-  border-radius: 5px;
 }
 
 .gg-mail,.gg-phone, .gg-pin {
