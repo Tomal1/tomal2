@@ -49,7 +49,7 @@ class Carousel {
     const info = [
       {
         message:
-          "Play Rock, Paper and Scissors against the computer; the functionality of this fun little application was made using; HTML, CSS and vanilla JavaScript.",
+          "Play Rock, Paper and Scissors against the computer, the technolagies used to build this application were: HTML, CSS and vanilla JavaScript. After entering the game click on one of the options (rock, paper or scissors) and the wait for the computer to select its option to dertermin who will become the winner.",
         gitHub: "https://github.com/Tomal1/Rock-Paper-and-Scissors",
         URL: "https://tomal1.github.io/Rock-Paper-and-Scissors/",
       },
@@ -67,13 +67,13 @@ class Carousel {
       },
       {
         message:
-          "Another personal profile using react, the app has been heavily influenced from a YouTube video however one that I wanted to build from scratch, a fantastic way to learn react non the less.",
+          "Another personal profile using react, the app has been heavily influenced from a YouTube video which caught my attenttion so I decided to build from scratch by watching the video, this project was a fantastic way to learn react non the less.",
         gitHub: "https://github.com/Tomal1/tomal",
         URL: "https://tomal1.github.io/tomal/",
       },
       {
         message:
-          "This is a full stack to do list, the technologies used to build this app include: HTML,CSS,JS, Node, Express and MariaDB. Note: this app has not been deployed but can be run on local machine.",
+          "This is a full stack to do list, the technologies used to build this app include: HTML, CSS, JS, Node, Express and MariaDB. Note: this app has not been deployed but can be downloaded from my github repo and the run on your local machine.",
         gitHub: "https://github.com/Tomal1/to-do-list-CRUD2",
         URL: "#",
       },
