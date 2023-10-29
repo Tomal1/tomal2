@@ -14,11 +14,16 @@ figure{
   
 }
 
-figure figcaption .heroCaption{
-  width: 80%;
-  height: 100px;
-  margin: 0px 0px 200px 20px;
+#about figure .heroCaption{
+  width: 70%;
+  height: 120px;
+  padding: 20px;
+  margin: -370px 0px 0px 220px;
   color: white;
+  font-size: 20px;
+  border: 3px solid var(--everything);
+  border-radius: 20px;
+  background: transparent;
 }
 
 figure figcaption{
@@ -30,9 +35,10 @@ figure figcaption{
 }
 
 figure .dlResume{
- 
-  margin:300px 0px 0px -480px;
+  margin:-200px 0px 0px -480px;
   height:35px;
+  font-size: 20px;
+  
 }
 
 .heroBorder{
@@ -41,7 +47,6 @@ figure .dlResume{
   height: 75vh;
   background-color: var(--everything); 
 }
-
 
 .hero {
   width: auto;
@@ -53,7 +58,7 @@ figure .dlResume{
 
 .heroHeaderCon{
   height: 50px;
-  margin: 150px 0 0 0px;
+  margin: 150px 0px 0px 200px;
 }
 
 .heroHeaders{
@@ -62,6 +67,7 @@ figure .dlResume{
   margin: 100px 20px 0px 20px;
   padding: 10px;
   cursor: pointer;
+  font-size: 20px;
 }
 
 .gg-mail,.gg-phone, .gg-pin {
