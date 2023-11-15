@@ -4,9 +4,9 @@
   box-sizing: border-box;
   font-family: "gorock brush", sans-serif;
   scroll-behavior: smooth;
-  --dominant: #303030;
+  --dominant: #282828;
   color: white;
-  --everything: #cd5c5c;
+  --everything: #8c4040;
   background-color: var(--dominant);
 }
 
@@ -30,7 +30,9 @@ nav {
   align-items: center;
   padding: 0px 140px 0px 0px;
   z-index: 3;
-  
+  outline: 2px solid var(--everything);
+  opacity: 0.7;
+  outline-offset: 2px;
 }
 
 nav a {

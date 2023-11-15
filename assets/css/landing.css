@@ -8,6 +8,7 @@
 
 #landing .landingPic {
   border: 3px solid white;
+  border-style: double;
   background-color: var(--everything);
   height: 435px;
   width: 418px;

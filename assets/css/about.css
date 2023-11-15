@@ -6,15 +6,14 @@
   padding: 20vh 150px 0px 0px;
 }
 
-figure{
+figure {
   margin: auto;
   width: 80%;
   display: flex;
   flex-wrap: wrap;
-  
 }
 
-#about figure .heroCaption{
+#about figure .heroCaption {
   width: 70%;
   height: 120px;
   padding: 20px;
@@ -22,11 +21,12 @@ figure{
   color: white;
   font-size: 20px;
   border: 3px solid var(--everything);
+  border-style: double;
   border-radius: 20px;
   background: transparent;
 }
 
-figure figcaption{
+figure figcaption {
   text-align: center;
   width: 70%;
   height: 100px;
@@ -34,18 +34,18 @@ figure figcaption{
   background-color: transparent;
 }
 
-figure .dlResume{
-  margin:-200px 0px 0px -480px;
-  height:35px;
+figure .dlResume {
+  margin: -200px 0px 0px -480px;
+  height: 35px;
   font-size: 20px;
-  
 }
 
-.heroBorder{
+.heroBorder {
   border: 3px solid white;
+  border-style: double;
   border-radius: 20px;
   height: 75vh;
-  background-color: var(--everything); 
+  background-color: var(--everything);
 }
 
 .hero {
@@ -56,12 +56,12 @@ figure .dlResume{
   margin: -25px 0 0 0;
 }
 
-.heroHeaderCon{
+.heroHeaderCon {
   height: 50px;
   margin: 150px 0px 0px 200px;
 }
 
-.heroHeaders{
+.heroHeaders {
   list-style: none;
   display: inline;
   margin: 100px 20px 0px 20px;
@@ -70,6 +70,8 @@ figure .dlResume{
   font-size: 20px;
 }
 
-.gg-mail,.gg-phone, .gg-pin {
-    background: none;
+.gg-mail,
+.gg-phone,
+.gg-pin {
+  background: none;
 }

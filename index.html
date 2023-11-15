@@ -38,7 +38,6 @@
           <img src="./assets/images/rad2.png" class="rad2" />
           <!-- <div class="landingPicBorder"></div> -->
         </div>
-        
 
         <div class="container">
           <span class="text sec-text"></span>
@@ -106,69 +105,81 @@
           <div class="gallery-controls"></div>
         </div>
       </section>
+
       <section id="contact">
-        <div class="container">
-          <h2>Contact details</h2>
-          <p>How can I help?</p>
-          <div class="contact-box">
-            <div class="contact-left">
+        <div class="contactUs">
+          <div class="title"></div>
+          <div class="box">
+            <!-- Form -->
+            <div class="contact form">
+              <h3>Send a message</h3>
               <form>
-                <div class="input-row">
-                  <div class="input-group">
-                    <label>Name</label>
-                    <input
-                      class="clintInp"
-                      type="text"
-                      placeholder="Jhon Doe"
-                    />
+                <div class="formBox">
+                  <div class="row50">
+                    <div class="inputBox">
+                      <span>First Name</span>
+                      <input type="text" placeholder="jhon" />
+                    </div>
+                    <div class="inputBox">
+                      <span>Last Name</span>
+                      <input type="text" placeholder="doe" />
+                    </div>
                   </div>
-                  <div class="input-group">
-                    <label>phone</label>
-                    <input
-                      class="clintInp"
-                      type="tel"
-                      placeholder="0208 xxx xxxx"
-                    />
+
+                  <div class="row50">
+                    <div class="inputBox">
+                      <span>Email</span>
+                      <input type="text" placeholder="xyz@xyz.com" />
+                    </div>
+
+                    <div class="inputBox">
+                      <span>Mobile</span>
+                      <input type="text" placeholder="0700 000 0000" />
+                    </div>
+                  </div>
+
+                  <div class="row100">
+                    <div class="inputBox">
+                      <span>message</span>
+                      <textarea placeholder="write your message"></textarea>
+                    </div>
+                  </div>
+
+                  <div class="row100">
+                    <div>
+                      <input type="submit" value="Send" class="sendBtn" />
+                    </div>
                   </div>
                 </div>
-                <div class="input-row">
-                  <div class="input-group">
-                    <label>Email</label>
-                    <input
-                      class="clintInp"
-                      type="email"
-                      placeholder="xyz@email.co.uk"
-                    />
-                  </div>
-                  <div class="input-group">
-                    <label>subject</label>
-                    <input
-                      class="clintInp"
-                      type="text"
-                      placeholder="add subject hear"
-                    />
-                  </div>
-                </div>
-                <label>Message</label>
-                <textarea rows="5" placeholder="your message"></textarea>
-                <button class="contactBTN" type="submit">Send</button>
               </form>
             </div>
-            <div class="contact-right">
-              <table>
-                <tr>
-                  <td><i class="gg-mail"></i></td>
-                  <td>minhazul************</td>
-                </tr>
-                <tr>
-                  <td><i class="gg-phone"></i></td>
-                  <td>0792 *********</td>
-                </tr>
-                <tr>
-                  <td><i class="gg-pin"></i></td>
-                  <td>Halesowen, B62</td>
-                </tr>
-              </table>
+            <!-- info Box -->
+            <div class="contact info">
+              <h3>Contact details</h3>
+              <div class="infoBox">
+                <div>
+                  <span><i class="gg-pin"></i></span>
+                  <p>Halesowen, B62</p>
+                </div>
+                <div>
+                  <span><i class="gg-mail"></i></span>
+                  <a href="#">xyz@xyz.com</a>
+                </div>
+                <div>
+                  <span><i class="gg-phone"></i></span>
+                  <a href="#">0700 000 0000</a>
+                </div>
+              </div>
+            </div>
+            <!-- map -->
+            <div class="contact map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2430.4126402149027!2d-2.033194723459155!3d52.47166403980712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48709655528717bf%3A0x28d8d5a69a0b8db0!2sClifton%20Rd%2C%20Halesowen%20B62%209HB!5e0!3m2!1sen!2suk!4v1699385690296!5m2!1sen!2suk"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
         </div>

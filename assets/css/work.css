@@ -166,19 +166,22 @@
 #information {
   margin: 80vh 0 0 0;
   width: 80vw;
-  height: 0px;
+  font-size: 20px;
 }
 
 .GitHubBTN,
 .URL,
-.dlResume {
+.dlResume,
+.sendBtn {
   color: var(--everything);
   margin: 30px 5px;
-  border: 1px solid var(--everything);
+  border: 3px solid var(--everything);
+  border-style: double;
   padding: 10px;
   cursor: pointer;
   border-radius: 5px;
   text-decoration: none;
+  font-size: 20px;
 }
 
 button:hover,
@@ -190,6 +193,19 @@ button:hover,
 }
 
 .btn-div {
-  margin: -125px;
+  margin: -135px;
   text-align: center;
+}
+
+@media (max-width: 1300px) {
+  .gallery-controls,
+  .GitHubBTN,
+  .URL,
+  #information {
+    display: none;
+  }
+
+  .gallery-container {
+    display: flex;
+  }
 }

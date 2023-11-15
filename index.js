@@ -55,7 +55,7 @@ class Carousel {
       },
       {
         message:
-          "This is a calendar application that allow the client to save entries dor different hours throughout a working day. It tracks the current time and then color codes the calender depending on certain conditions or criteria. There is a button next to each entry section which allows the client to append notes next to the appropriate time slot.",
+          "This is a calendar application that allow the client to save entries for different hours throughout the day. It tracks the time and then color codes the calender depending on certain conditions. There is a button next to each entry section which allows the client to append notes next to the appropriate time slot.",
         gitHub: "https://github.com/Tomal1/Work-Day-Scheduler",
         URL: "https://tomal1.github.io/Work-Day-Scheduler/",
       },
