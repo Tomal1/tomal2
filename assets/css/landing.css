@@ -6,22 +6,22 @@
   padding: 20vh 150px 0px 0px;
 }
 
-#landing .landingPic {
+#landing .landingPic { /* this is the outer border/container for the picture*/
   border: 3px solid white;
   border-style: double;
   background-color: var(--everything);
-  height: 435px;
+  height: 435px; /*container height*/
   width: 418px;
   margin: 95px 0px 0px 145px;
   border-radius: 20px;
 }
 
-#landing .rad2 {
-  height: 550px;
+#landing .rad2 { /*this is the picture*/
+  height: 550px; /*images hight*/
+  width: auto; /*dont want to distort image so set to auto*/
   border-radius: 20px;
   margin: -121px 0px;
-  width: auto;
-  background-color: transparent;
+  background-color: transparent; /*trascperent to give illision of coming out of pic*/
 }
 
 #landing .container {

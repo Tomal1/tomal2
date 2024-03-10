@@ -1,15 +1,32 @@
 //shrinking nav bar on scroll
 const nav = document.querySelector("#nav");
-
-const heroCaption = document.querySelector(".heroCaption");
-
-const heroHeaders = document.querySelectorAll(".heroHeaders");
-
 const text = document.querySelector(".sec-text");
 
-window.addEventListener("scroll", () => {
-  nav.classList.toggle("sticky", window.scrollY > 200);
-});
+class Landing {
+  scroll = () => {
+    window.addEventListener("scroll", () => {
+      nav.classList.toggle("sticky", window.scrollY > 200);
+    });
+  };
+
+  //funcationality for anmated text on landing page
+  textLord = () => {
+    setTimeout(() => {
+      text.textContent = "Hi my name is Tomal";
+    }, 0);
+    setTimeout(() => {
+      text.textContent = "I am a Web devloper";
+    }, 5000);
+    setTimeout(() => {
+      text.textContent = "Please take a look below";
+    }, 10000);
+  };
+}
+
+const invoke = new Landing();
+invoke.scroll();
+invoke.textLord();
+setInterval(invoke.textLord, 15000);
 
 //carousl
 
@@ -131,6 +148,10 @@ exampleCarousel.useControls();
 exampleCarousel.updateGallery(); // accessing our class (Carousel) and then invoking a function (updateGalary)
 
 // functionality for the about me section
+
+const heroCaption = document.querySelector(".heroCaption");
+const heroHeaders = document.querySelectorAll(".heroHeaders");
+
 const aboutInfo = {
   AboutMe:
     "Hi my name is Tomal, I like building websites and now I am looking for a web develoment job. The thrill of solving a mystery, then finding a better way to solve it or rebuild somthing after breaking it to find out how it works lol.",
@@ -140,44 +161,35 @@ const aboutInfo = {
     "I www commonly use but not limited to the following technolagies: Express & MariaDB. Other technolagies include: CLI, Git, GitHub & Imsomnia. Currently I am learning about Object Orintared Progaming and THIS NEEDS TO BE A MINIMUM OF TWO LINES LONG OTHREWISE THE TEXT WONT SHOW UP ON THE SCREEN",
 };
 
-for (let i = 0; i < heroHeaders.length; i++) {
-  heroCaption.textContent = aboutInfo.AboutMe;
-  heroHeaders[0].style.color = "white";
-  heroHeaders[1].style.color = "var(--everything)";
-  heroHeaders[2].style.color = "var(--everything)";
-
-  heroHeaders[i].addEventListener("click", (e) => {
-    if (e.target.innerHTML === "about me") {
+class AboutMe {
+  tabs = () => {
+    for (let i = 0; i < heroHeaders.length; i++) {
       heroCaption.textContent = aboutInfo.AboutMe;
       heroHeaders[0].style.color = "white";
       heroHeaders[1].style.color = "var(--everything)";
       heroHeaders[2].style.color = "var(--everything)";
-    } else if (e.target.innerHTML === "tecnolagies") {
-      heroCaption.textContent = aboutInfo.Technolagies;
-      heroHeaders[1].style.color = "white";
-      heroHeaders[0].style.color = "var(--everything)";
-      heroHeaders[2].style.color = "var(--everything)";
-    } else if (e.target.innerHTML === "interests") {
-      heroCaption.textContent = aboutInfo.Interest;
-      heroHeaders[2].style.color = "white";
-      heroHeaders[0].style.color = "var(--everything)";
-      heroHeaders[1].style.color = "var(--everything)";
+
+      heroHeaders[i].addEventListener("click", (e) => {
+        if (e.target.innerHTML === "about me") {
+          heroCaption.textContent = aboutInfo.AboutMe;
+          heroHeaders[0].style.color = "white";
+          heroHeaders[1].style.color = "var(--everything)";
+          heroHeaders[2].style.color = "var(--everything)";
+        } else if (e.target.innerHTML === "tecnolagies") {
+          heroCaption.textContent = aboutInfo.Technolagies;
+          heroHeaders[1].style.color = "white";
+          heroHeaders[0].style.color = "var(--everything)";
+          heroHeaders[2].style.color = "var(--everything)";
+        } else if (e.target.innerHTML === "interests") {
+          heroCaption.textContent = aboutInfo.Interest;
+          heroHeaders[2].style.color = "white";
+          heroHeaders[0].style.color = "var(--everything)";
+          heroHeaders[1].style.color = "var(--everything)";
+        }
+      });
     }
-  });
+  };
 }
 
-//funcationality for anmated text on landing page
-
-const textLord = () => {
-  setTimeout(() => {
-    text.textContent = "Hi my name is Tomal";
-  }, 0);
-  setTimeout(() => {
-    text.textContent = "I am a Web devloper";
-  }, 5000);
-  setTimeout(() => {
-    text.textContent = "Please take a look below";
-  }, 10000);
-};
-textLord();
-setInterval(textLord, 15000);
+const i2 = new AboutMe();
+i2.tabs();
