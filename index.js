@@ -11,13 +11,13 @@ class Landing {
   //funcationality for anmated text on landing page
   textLord = () => {
     setTimeout(() => {
-      text.textContent = "Hi my name is Tomal";
+      text.textContent = "Hello my name is Tomal";
     }, 0);
     setTimeout(() => {
-      text.textContent = "I am a Web devloper";
+      text.textContent = "I like solving puzzels";
     }, 5000);
     setTimeout(() => {
-      text.textContent = "Please take a look below";
+      text.textContent = "Please take a look at my website";
     }, 10000);
   };
 }
@@ -45,7 +45,7 @@ class Carousel {
     this.carouselArray = [...items];
   }
 
-  updateGallery() {
+  updateGallery = () => {
     this.carouselArray.forEach((el) => {
       el.classList.remove("gallery-item-1");
       el.classList.remove("gallery-item-2");
@@ -103,7 +103,7 @@ class Carousel {
     }
   }
 
-  setCurrentState(direction) {
+  setCurrentState = (direction) => {
     //determingin what each arrow dose
     direction.className === "gallery-controls-previous" 
     ? this.carouselArray.unshift(this.carouselArray.pop()) 
@@ -112,7 +112,7 @@ class Carousel {
     this.updateGallery();
   }
 
-  setControls() {
+  setControls = () => {
     // appending text to the arrows
     this.carouselControls.forEach((control) => {
       galleryControlsContainer.appendChild(
@@ -123,7 +123,7 @@ class Carousel {
     });
   }
 
-  useControls() {
+  useControls = () => {
     const triggers = [...galleryControlsContainer.childNodes];
 
     triggers.forEach((control) => {
@@ -135,8 +135,8 @@ class Carousel {
   }
 }
 
-const exampleCarousel = new Carousel(galleryContainer,galleryItems,galleryControls);
+const slider = new Carousel(galleryContainer,galleryItems,galleryControls);
 
-exampleCarousel.setControls();
-exampleCarousel.useControls();
-exampleCarousel.updateGallery(); // accessing our class (Carousel) and then invoking a function (updateGalary)
+slider.setControls();
+slider.useControls();
+slider.updateGallery(); // accessing our class (Carousel) and then invoking a function (updateGalary)

@@ -6,6 +6,22 @@
   padding: 20vh 150px 0px 0px;
 }
 
+.logoCon{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  
+  width: 900px;
+  height: 150px;
+  margin: 0px 0px 0px 40%;
+}
+
+.logos{
+  height: 100px;
+  margin:20px
+}
+
 #landing .landingPic { /* this is the outer border/container for the picture*/
   border: 3px solid white;
   border-style: double;
@@ -25,8 +41,8 @@
 }
 
 #landing .container {
-  margin: -50vh 0 0 600px;
-  width: 800px;
+  margin: -40vh 0 0 40%;
+  width: 900px;
   display: flex;
   justify-content: start;
 }
