@@ -105,11 +105,10 @@ class Carousel {
 
   setCurrentState(direction) {
     //determingin what each arrow dose
-    if (direction.className === "gallery-controls-previous") {
-      this.carouselArray.unshift(this.carouselArray.pop());
-    } else {
-      this.carouselArray.push(this.carouselArray.shift());
-    }
+    direction.className === "gallery-controls-previous" 
+    ? this.carouselArray.unshift(this.carouselArray.pop()) 
+    :this.carouselArray.push(this.carouselArray.shift());
+    
     this.updateGallery();
   }
 
@@ -136,44 +135,8 @@ class Carousel {
   }
 }
 
-const exampleCarousel = new Carousel(
-  galleryContainer,
-  galleryItems,
-  galleryControls
-);
+const exampleCarousel = new Carousel(galleryContainer,galleryItems,galleryControls);
 
 exampleCarousel.setControls();
 exampleCarousel.useControls();
 exampleCarousel.updateGallery(); // accessing our class (Carousel) and then invoking a function (updateGalary)
-
-// functionality for the about me section
-
-const heroCaption = document.querySelector(".heroCaption");
-const heroHeaders = document.querySelectorAll(".heroHeaders");
-
-class AboutMe {
-  tabs = () => {
-    const aboutInfo = {
-      AboutMe:
-        "Hi my name is Tomal, I like building websites and now I am looking for a web develoment job. The thrill of solving a mystery, then finding a better way to solve it or rebuild somthing after breaking it to find out how it works lol.",
-      Technolagies:
-        "I most commonly use but not limited to the following technolagies: HTML, CSS, JS, React, Node, Express & MariaDB. Other technolagies include: CLI, Git, GitHub & Imsomnia. Currently I am learning about Object Orintared Progaming and Unit testing with Jest, my future endovers include learing C#.",
-      Interest:
-        "I www commonly use but not limited to the following technolagies: Express & MariaDB. Other technolagies include: CLI, Git, GitHub & Imsomnia. Currently I am learning about Object Orintared Progaming and THIS NEEDS TO BE A MINIMUM OF TWO LINES LONG OTHREWISE THE TEXT WONT SHOW UP ON THE SCREEN",
-    };
-
-    for (let i = 0; i < heroHeaders.length; i++) {
-      //default setting
-      heroCaption.textContent = aboutInfo["AboutMe"];
-
-      heroHeaders[i].addEventListener("click", (e) => {
-        if (e.target) {
-          heroCaption.textContent = aboutInfo[e.target.innerHTML];
-        }
-      });
-    }
-  };
-}
-
-const i2 = new AboutMe();
-i2.tabs()

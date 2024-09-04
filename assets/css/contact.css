@@ -144,3 +144,9 @@
       "map";
   }
 }
+
+.gg-mail,
+.gg-phone,
+.gg-pin {
+  background: none;
+}
