@@ -1,31 +1,12 @@
 const nav = document.querySelector("#nav");
-const text = document.querySelector(".sec-text");
 
-class Landing {
-  scroll = () => {
+
+// this is a function for the shrinking navbar
+const scroll = () => {
     window.addEventListener("scroll", () => {
       nav.classList.toggle("sticky", window.scrollY > 200);
     });
-  };
-
-  //funcationality for anmated text on landing page
-  textLord = () => {
-    setTimeout(() => {
-      text.textContent = "Hello my name is Tomal";
-    }, 0);
-    setTimeout(() => {
-      text.textContent = "I like solving puzzels";
-    }, 5000);
-    setTimeout(() => {
-      text.textContent = "Please take a look at my website";
-    }, 10000);
-  };
-}
-
-const invoke = new Landing();
-invoke.scroll();
-invoke.textLord();
-setInterval(invoke.textLord, 15000);
+  }; scroll();
 
 //carousl
 

@@ -10,16 +10,15 @@
   display: flex;
   flex-wrap: wrap;
   align-content: center;
-  justify-content: center;
-  
-  width: 900px;
+  justify-content: space-around;
+  width: 100vw;
   height: 150px;
-  margin: 0px 0px 0px 40%;
+  margin-top: 5vh;
+
 }
 
-.logos{
+.logoCon .logos{
   height: 100px;
-  margin:20px
 }
 
 #landing .landingPic { /* this is the outer border/container for the picture*/
@@ -28,7 +27,7 @@
   background-color: var(--everything);
   height: 435px; /*container height*/
   width: 418px;
-  margin: 95px 0px 0px 145px;
+  margin: 0% 0px 0px 10%;
   border-radius: 20px;
 }
 
