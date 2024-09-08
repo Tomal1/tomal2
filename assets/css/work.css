@@ -13,8 +13,8 @@
 }
 
 .gallery-container {
-  align-items: center;
   display: flex;
+  align-items: center;
   height: 300px;
   margin: 0 auto;
   max-width: 100%;
@@ -23,10 +23,10 @@
 
 .gallery-item {
   height: 200px;
+  width: 330px;
   opacity: 0;
   position: absolute;
   transition: all 0.3s ease-in-out;
-  width: 330px;
   z-index: 0;
   background-size: contain;
 }
@@ -200,11 +200,69 @@ button:hover,
   .gallery-controls,
   .GitHubBTN,
   .URL,
+  .gallery-nav,
+  h1,
   #information {
     display: none;
   }
 
   .gallery-container {
-    display:inline;
+    height: 100vh;
+ 
   }
+
+  .gallery-item-1{
+    top: 0%;
+    left: 37.5%;
+  }
+  .gallery-item-2{
+    top: 0%;
+    left: 62.5%;
+  }
+  .gallery-item-3{ 
+    top: 30%; 
+    left: 37.5%;
+  }
+  .gallery-item-4{
+    top: 30%;
+    left: 62.5%;
+  }
+
+  .gallery-item-5{
+    top:60%;
+    left: 50%;
+  }
+
+  .gallery-item{
+    height: 140px;
+    width: 200px;
+    opacity: 1;
+
+  }
+}
+
+@media (max-width: 1020px){
+  
+  .gallery-item-1{
+    top: 0%;
+    left: 22.5%;
+  }
+  .gallery-item-2{
+    top: 0%;
+    left: 77.5%;
+  }
+  .gallery-item-3{ 
+    top: 30%; 
+    left: 22.5%;
+  }
+  .gallery-item-4{
+    top: 30%;
+    left: 77.5%;
+  }
+
+  .gallery-item-5{
+    top:60%;
+    left: 50%;
+  }
+
 }
