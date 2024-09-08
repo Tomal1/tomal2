@@ -30,6 +30,7 @@
   z-index: 0;
   background-size: contain;
 }
+
 .gallery-item-1 {
   left: 15%;
   opacity: 0.4;
@@ -171,7 +172,6 @@
 
 .GitHubBTN,
 .URL,
-.dlResume,
 .sendBtn {
   color: var(--everything);
   margin: 30px 5px;
@@ -185,8 +185,7 @@
 }
 
 button:hover,
-[type="submit"]:hover,
-.dlResume:hover {
+[type="submit"]:hover {
   scale: 1.025;
   border-color: white;
   transition: 0.5s;
@@ -206,6 +205,6 @@ button:hover,
   }
 
   .gallery-container {
-    display: flex;
+    display:inline;
   }
 }
