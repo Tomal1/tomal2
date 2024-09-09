@@ -1,3 +1,7 @@
+.smallerGallery{
+  display: none;
+}
+
 #work h1 {
   color: var(--everything);
   font-size: 50px;
@@ -197,72 +201,29 @@ button:hover,
 }
 
 @media (max-width: 1300px) {
-  .gallery-controls,
-  .GitHubBTN,
-  .URL,
-  .gallery-nav,
-  h1,
-  #information {
+  
+  #work{
+    height: fit-content;
+
+  }
+  
+  .gallery{
     display: none;
   }
 
-  .gallery-container {
-    height: 100vh;
- 
+  .smallerGallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
   }
 
-  .gallery-item-1{
-    top: 0%;
-    left: 37.5%;
-  }
-  .gallery-item-2{
-    top: 0%;
-    left: 62.5%;
-  }
-  .gallery-item-3{ 
-    top: 30%; 
-    left: 37.5%;
-  }
-  .gallery-item-4{
-    top: 30%;
-    left: 62.5%;
+  .smaller-gal-item{
+    height: 200px;
+    width: 300px;
+    margin: 10px;
   }
 
-  .gallery-item-5{
-    top:60%;
-    left: 50%;
-  }
-
-  .gallery-item{
-    height: 140px;
-    width: 200px;
-    opacity: 1;
-
-  }
-}
-
-@media (max-width: 1020px){
-  
-  .gallery-item-1{
-    top: 0%;
-    left: 22.5%;
-  }
-  .gallery-item-2{
-    top: 0%;
-    left: 77.5%;
-  }
-  .gallery-item-3{ 
-    top: 30%; 
-    left: 22.5%;
-  }
-  .gallery-item-4{
-    top: 30%;
-    left: 77.5%;
-  }
-
-  .gallery-item-5{
-    top:60%;
-    left: 50%;
-  }
 
 }
