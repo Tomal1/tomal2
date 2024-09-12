@@ -19,6 +19,11 @@
   text-align: center;
 }
 
+
+#nav2{
+  display: none;
+}
+
 nav {
   margin-top: 0px;
   position: fixed;
@@ -66,8 +71,21 @@ nav:not(:hover) {
   }
   
   nav {
-    opacity: 1;  
+    display: none;
   }
+
+  #nav2{
+    margin-top: 0px;
+    position: fixed;
+    background-color: var(--everything);
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+  }
+   
 
   
  
