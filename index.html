@@ -37,18 +37,7 @@
     </nav>
 
     <main>
-
-
-
-
-
-
-
-
       <section id="landing">
-
-          
-
           <div class="landingPic">
             <div class="borderOfPic">
             <img src="./assets/images/main.png" class="mainPic" />
@@ -70,7 +59,6 @@
             <img src="./assets/images/git.png" class="logos"/>
             <img src="./assets/images/github.png" class="logos"/>
           </div>
-
       </section>
 
 
@@ -130,41 +118,19 @@
           <div class="gallery-controls"></div>
         </div>
 
-        <div class="smallerGallery">
-
-          <a href="https://tomal1.github.io/Rock-Paper-and-Scissors/"><img
-            class="smaller-gal-item"
-            src="./assets/images/RPS.png"
-          /></a>
-          <buttton><a href="https://github.com/Tomal1/Rock-Paper-and-Scissors">GitHub</a></buttton>
-
-          <a href="https://tomal1.github.io/Work-Day-Scheduler/"><img
-            class="smaller-gal-item"
-            src="./assets/images/WDS.png"
-          /></a>
-          <buttton><a href="https://github.com/Tomal1/Work-Day-Scheduler">GitHub</a></buttton>
-
-          <a href="https://tomal1.github.io/6_weather_app/"><img
-            class="smaller-gal-item"
-            src="./assets/images/weather.png"
-          /></a>
-          <buttton><a href="https://github.com/Tomal1/6_weather_app">GitHub</a></buttton>
-     
-          <a href="https://tomal1.github.io/tomal/"><img
-            class="smaller-gal-item"
-            src="./assets/images/profile.png"
-          /></a>
-          <buttton><a href="https://github.com/Tomal1/tomal">GitHub</a></buttton>
-          
-          <a href="#"><img
-            class="smaller-gal-item"
-            src="./assets/images/tdl.png"
-          /></a>
-          <buttton><a href="https://github.com/Tomal1/to-do-list-CRUD2">GitHub</a></buttton>
+        <div id="smallerSlider">
+              <img src="./assets/images/RPS.png" class="slides"/>
+              <img src="./assets/images/WDS.png" class="slides"/>
+              <img src="./assets/images/weather.png" class="slides"/>
+              <img src="./assets/images/profile.png" class="slides"/>
+              <img src="./assets/images/tdl.png" class="slides"/>
+              
+          <button class="btn" id="btn1" onclick="plusIndex(-1)">&#10094:</button>
+          <button class="btn" id="btn2" onclick="plusIndex(1)">&#10095:</button>
         </div>
 
       </section>
-
+      
       <section id="contact">
         <div class="contactUs">
           <div class="title"></div>
@@ -253,5 +219,6 @@
 
     </main>
     <script src="./index.js"></script>
+    <script src="./index2.js"></script>
   </body>
 </html>

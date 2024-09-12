@@ -1,27 +1,27 @@
-#landing{
-  padding: 10vh 10% 0 10%;
+#landing {
+  padding: 10% 10% 0 10%;
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 3fr 1fr;
   grid-template-areas:
-  "landingPic textSection textSection"
-  "landingPic textSection textSection"
-  "landingPic textSection textSection"
-  "logoCon logoCon logoCon";
+    "landingPic textSection textSection"
+    "landingPic textSection textSection"
+    "landingPic textSection textSection"
+    "logoCon logoCon logoCon";
   gap: 20px;
 }
 
-.landingPic{
+.landingPic {
+  grid-area: landingPic;
   display: flex;
   justify-content: end;
   align-items: center;
-  grid-area: landingPic;
   padding-left: 0px;
   height: 100%;
   width: 100%;
 }
 
-.borderOfPic{
+.borderOfPic {
   border: 3px solid white;
   border: double;
   border-radius: 20px;
@@ -29,21 +29,21 @@
   width: 300px;
 }
 
-.mainPic{
-  height:445px;
+.mainPic {
+  height: 445px;
   width: auto;
 }
 
-.textSection{
+.textSection {
   grid-area: textSection;
-  height: 100%;
-  width: 100%;
   display: flex;
   justify-content: start;
   align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
-.borderOfText{
+.borderOfText {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,11 +54,11 @@
   width: 600px;
 }
 
-.paragraph{
+.paragraph {
   font-size: 50px;
 }
 
-.logoCon{
+.logoCon {
   grid-area: logoCon;
   display: flex;
   justify-content: space-between;
@@ -67,36 +67,31 @@
   height: 100px;
 }
 
-.logos{
+.logos {
   height: 50px;
 }
-  
-@media (max-width: 1300px) {
 
-  .textSection{
+@media (max-width: 1300px) {
+  .textSection {
     display: none;
   }
 
-  #landing{
+  #landing {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 3fr 2fr;
     grid-template-areas:
-    "landingPic"
-    "landingPic"
-    "landingPic"
-    "logoCon";
+      "landingPic"
+      "landingPic"
+      "landingPic"
+      "logoCon";
     gap: 20px;
   }
 
-    .landingPic{
-      margin-top: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    
-  
-
-
+  .landingPic {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

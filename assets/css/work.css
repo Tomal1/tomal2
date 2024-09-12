@@ -1,4 +1,4 @@
-.smallerGallery{
+#container {
   display: none;
 }
 
@@ -201,30 +201,48 @@ button:hover,
 }
 
 @media (max-width: 1300px) {
-  
-  #work{
-    height: fit-content;
-
-  }
-  
-  .gallery{
+  .gallery {
     display: none;
   }
 
-  .smallerGallery{
-    margin: auto;
+  #work {
+    text-align: left;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    
   }
 
-  .smaller-gal-item{
-    height: 300px;
-    width: 400px;
-    margin: 10px;
+  #smallerSlider {
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    width: 80%;
+    height: 450px;
+    position: relative;
+  }
+  #smallerSlider > img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 20px;
   }
 
+  #smallerSlider > .btn {
+    position: absolute;
+    border: none;
+    top: 200px;
+    background: none;
+    color: var(--everything);
+    font-size: 50px;
+  }
 
+  #smallerSlider > #btn1:hover,
+  #btn2:hover {
+    scale: 1.2;
+  }
+
+  #smallerSlider > #btn2 {
+    position: relative;
+    float: right;
+  }
 }
