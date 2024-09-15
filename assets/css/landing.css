@@ -17,6 +17,9 @@
 
 .landingPic {
   grid-area: landingPic;
+  display: flex;
+  justify-content: end;
+  align-items: center;
   height: 100%;
   width: 100%;
 }
@@ -39,6 +42,7 @@
 
 .textSection {
   grid-area: textSection;
+  text-align: center;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -62,9 +66,10 @@
 }
 
 .logoCon {
+  padding: 0 10vw 0 10vw;
   grid-area: logoCon;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 100px;
