@@ -77,7 +77,7 @@ nav:not(:hover) {
     position: fixed;
     background-color: var(--everything);
     height: 10vh;
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: flex-end;
     align-items: center;
