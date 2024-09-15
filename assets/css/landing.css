@@ -1,5 +1,7 @@
 #landing {
-  padding: 10% 10% 0 10%;
+  height: 100vh;
+  width: 100vw;
+  padding: 15% 0 0 0;
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 3fr 1fr;
@@ -10,19 +12,19 @@
     "logoCon logoCon logoCon";
   gap: 20px;
   align-items: center;
+
 }
 
 .landingPic {
-  padding: 5%;
   grid-area: landingPic;
-  display: flex;
-  justify-content: end;
-  align-items: center;
   height: 100%;
   width: 100%;
 }
 
 .borderOfPic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 3px solid white;
   border: double;
   border-radius: 20px;
@@ -62,7 +64,7 @@
 .logoCon {
   grid-area: logoCon;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
   height: 100px;
@@ -82,10 +84,8 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
-
       "landingPic"
       "logoCon";
-    gap: 20px;
   }
 
   .landingPic {
