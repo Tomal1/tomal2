@@ -211,16 +211,16 @@ button:hover,
     display: flex;
     justify-content: center;
     align-items: center;
+    
   }
 
   #smallerSlider {
-    margin: 0px;
-    padding: 0px;
     display: block;
     width: 80%;
     height: 450px;
     position: relative;
   }
+  
   #smallerSlider > img {
     width: 70%;
     height: 70%;

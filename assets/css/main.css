@@ -29,7 +29,7 @@ nav {
   position: fixed;
   background-color: var(--everything);
   height: 10vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -74,15 +74,16 @@ nav:not(:hover) {
     display: none;
   }
 
-  #nav2{
+  #nav{
     margin-top: 0px;
     position: fixed;
     background-color: var(--everything);
     height: 10vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+  
 
   }
    
