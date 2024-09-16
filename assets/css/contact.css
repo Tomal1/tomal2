@@ -43,7 +43,7 @@
 
 .formBox {
   position: relative;
-  width: 100%;
+  width: 100vw;
 }
 
 .formBox .row50 {
@@ -55,11 +55,11 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
-  width: 50%;
+  width: 50vw;
 }
 
 .formBox .row100 .inputBox {
-  width: 100%;
+  width: 100vw;
 }
 
 .inputBox span {
@@ -122,14 +122,14 @@
 }
 
 .map iframe {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   border-radius: 20px;
 }
 
 /* mobile responsive */
 
-@media (max-width: 991px) {
+@media (max-width: 1300px/*991px*/) {
   .contactUs {
     padding: 20px;
   }
