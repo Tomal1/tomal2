@@ -65,15 +65,7 @@ nav:not(:hover) {
   }
 
   #nav{
-    margin-top: 0px;
-    position: fixed;
-    background-color: var(--everything);
-    height: 10vh;
-    width: 100vw;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  
 
   }
    

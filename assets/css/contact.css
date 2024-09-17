@@ -138,7 +138,7 @@
     position: relative;
     display: grid;
     justify-content: center;
-    grid-template-columns: 450px;
+    grid-template-columns: 90vw;
     grid-template-rows: auto;
     grid-template-areas:
       "form"
