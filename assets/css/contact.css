@@ -132,7 +132,8 @@
 
 @media (max-width: 991px) {
   .contactUs {
-    padding: 20px;
+    padding: 0%;
+    
   }
   .box {
     position: relative;
