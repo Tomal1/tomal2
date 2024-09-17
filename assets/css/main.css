@@ -66,6 +66,8 @@ nav:not(:hover) {
 
   #nav{
     display: flex;
+    text-align: center;
+
 
   }
    
