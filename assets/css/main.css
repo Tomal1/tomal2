@@ -10,20 +10,16 @@
   background-color: var(--dominant);
 }
 
-#nav2{
-  display: none;
-}
-
 nav {
   margin-top: 0px;
   position: fixed;
   background-color: var(--everything);
   height: 10vh;
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 0px 140px 0px 0px;
+  padding: 0 10vw 0 0;
   z-index: 3;
   outline: 2px solid var(--everything);
   opacity: 0.7;
@@ -59,21 +55,10 @@ nav:not(:hover) {
   h1{
     display: none;
   }
-  
-  nav {
-    display: none;
+
+  nav{
+    justify-content: center;
+    padding: 0px;
   }
-
-  #nav{
-    display: flex;
-    text-align: center;
-
-
-  }
-   
-
-  
- 
-
 
 }

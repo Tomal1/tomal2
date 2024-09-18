@@ -1,12 +1,17 @@
 const nav = document.querySelector("#nav");
 
+console.log("width:",window.innerWidth,"px")
+console.log("height",window.innerHeight,"px")
 
 // this is a function for the shrinking navbar
 const scroll = () => {
-    window.addEventListener("scroll", () => {
-      nav.classList.toggle("sticky", window.scrollY > 200);
-    });
-  }; scroll();
+  window.innerWidth >= 1300
+    ? window.addEventListener("scroll", () => {
+        nav.classList.toggle("sticky", window.scrollY > 200);
+      })
+    : "";
+};
+scroll();
 
 //carousl
 
@@ -82,16 +87,16 @@ class Carousel {
         (window.location = `${info[target - 1].gitHub}`);
       Url.onclick = () => (window.location = `${info[target - 1].URL}`);
     }
-  }
+  };
 
   setCurrentState = (direction) => {
     //determingin what each arrow dose
-    direction.className === "gallery-controls-previous" 
-    ? this.carouselArray.unshift(this.carouselArray.pop()) 
-    :this.carouselArray.push(this.carouselArray.shift());
-    
+    direction.className === "gallery-controls-previous"
+      ? this.carouselArray.unshift(this.carouselArray.pop())
+      : this.carouselArray.push(this.carouselArray.shift());
+
     this.updateGallery();
-  }
+  };
 
   setControls = () => {
     // appending text to the arrows
@@ -102,7 +107,7 @@ class Carousel {
       document.querySelector(`.gallery-controls-${control}`).innerText =
         control;
     });
-  }
+  };
 
   useControls = () => {
     const triggers = [...galleryControlsContainer.childNodes];
@@ -113,10 +118,10 @@ class Carousel {
         this.setCurrentState(control);
       });
     });
-  }
+  };
 }
 
-const slider = new Carousel(galleryContainer,galleryItems,galleryControls);
+const slider = new Carousel(galleryContainer, galleryItems, galleryControls);
 
 slider.setControls();
 slider.useControls();
