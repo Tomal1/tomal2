@@ -146,6 +146,10 @@
       "info"
       "map";
   }
+
+  .info .infoBox div span {
+    margin:0px;
+  }
 }
 
 .gg-mail,
