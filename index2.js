@@ -31,17 +31,25 @@ const linkObj = [
 ];
 
 
-    smallerSlider.innerHTML= linkObj.map(x =>
-      `<div>
-        <div class=imageDiv>
-          <img src="${x.src}" class="slides">
-          <button class="sbtn" onclick="window.location.href='${x.URL}'">URL</button>
-          <button class="sbtn" onclick="window.location.href='${x.gitHub}'">GitHub</button>
-        
-        </div>
+      smallerSlider.innerHTML= linkObj.map(x =>
+        `<div class="thumCon">
+          <div class=imageDiv>
+            <img src="${x.src}" class="slides">
+          </div>
+          <div class="btnDiv">
+                      <button class="sbtn" onclick="window.location.href='${x.URL}'">URL</button>
+            <button class="sbtn" onclick="window.location.href='${x.gitHub}'">GitHub</button>
+          </div>
+  
+        </div>`
+      ).join("")
 
-      </div>`
-    ).join("")
+
+
+
+
+
+
     
 
   
