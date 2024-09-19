@@ -1,7 +1,5 @@
 const nav = document.querySelector("#nav");
 
-console.log("width:",window.innerWidth,"px")
-console.log("height",window.innerHeight,"px")
 
 // this is a function for the shrinking navbar
 const scroll = () => {
