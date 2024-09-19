@@ -126,3 +126,5 @@ const slider = new Carousel(galleryContainer, galleryItems, galleryControls);
 slider.setControls();
 slider.useControls();
 slider.updateGallery(); // accessing our class (Carousel) and then invoking a function (updateGalary)
+
+

@@ -230,7 +230,7 @@ button:hover,
     width: 70%;
     height: 70%;
     position: absolute;
-    margin: 15%;
+    margin: 12% 15% 0 15%;
 
   }
 
@@ -252,5 +252,28 @@ button:hover,
   #smallerSlider > #btn2 {
     position: relative;
     float: right;
+  }
+
+  .smallerSliderBtns{
+    position: absolute;
+    margin: 400px 25%;
+    height: 10%;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .sbtn{
+    cursor: pointer;
+    height: 35px;
+    width: 105px;
+    border-radius: 10px;
+    border: double;
+  }
+  .sbtn:hover{
+    color: var(--everything);
+    border: 3px solid var(--everything)
+
   }
 }
