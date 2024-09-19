@@ -36,7 +36,7 @@
 }
 
 .mainPic {
-  height: 445px;
+  height: 440px;
   width: auto;
 }
 
@@ -63,7 +63,7 @@
 }
 
 .paragraph {
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .logoCon {
@@ -113,13 +113,13 @@
   .textSection {
     grid-area: textSection;
     height: 100px;
-    width: 50vw;
-    margin-left: 25vw;
+    width: 70vw;
+    margin-left: 15vw;
     padding-bottom: 40px;
   }
 
   .paragraph {
-    font-size: 20px;
+    font-size: 16px;
   }
   .borderOfPic {
     border: none;
