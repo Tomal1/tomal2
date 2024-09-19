@@ -131,10 +131,6 @@
 /* mobile responsive */
 
 @media (max-width: 991px) {
-  .contactUs {
-    padding: 0%;
-    
-  }
   .box {
     position: relative;
     display: grid;
