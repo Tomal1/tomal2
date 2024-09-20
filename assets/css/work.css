@@ -13,7 +13,7 @@
   font-size: 50px;
   height: 10vh;
   text-align: right;
-  padding: 20vh 150px 0px 0px;
+  padding: 10vh 150px 0px 0px;
 }
 
 .gallery {
@@ -171,7 +171,7 @@
 }
 
 .info-display {
-  color: white;
+  color: var(--minor);
 }
 
 #information {
@@ -197,7 +197,7 @@
 button:hover,
 [type="submit"]:hover {
   scale: 1.025;
-  border-color: white;
+  border-color: var(--minor);
   transition: 0.5s;
 }
 
@@ -259,11 +259,11 @@ button:hover,
   .sbtn{
     height: 40px;
     width: 100px;
-    margin: 0px 10px ;
+    margin: 0px 20px ;
     border: none;
-    border: 3px solid white;
+    border: 3px solid var(--minor);
     border: double;
-    border-radius: 20px;
+    border-radius: 10px;
   }
 
   .sbtn:hover{

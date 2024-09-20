@@ -1,7 +1,7 @@
 .contactUs {
   position: relative;
   width: 100vw;
-  padding: 100px 10% 0px 10%;
+  padding: 10vh 10% 0px 10%;
 }
 
 .form {
@@ -101,7 +101,7 @@
   
   min-width: 40px;
   height: 40px;
-  color: white;
+  color: var(--minor);
   display: flex;
   justify-content: center;
   align-items: center;

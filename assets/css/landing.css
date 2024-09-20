@@ -1,7 +1,6 @@
 #landing {
   height: 100vh;
   width: 100vw;
-  padding: 15% 0 0 0;
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 3fr 1fr;
@@ -11,7 +10,6 @@
     "landingPic textSection textSection"
     "logoCon logoCon logoCon";
   gap: 20px;
-  align-items: center;
 
 }
 
@@ -28,7 +26,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 3px solid white;
+  border: 3px solid var(--minor);
   border: double;
   border-radius: 20px;
   height: 28em;
@@ -54,7 +52,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 3px solid white;
+  border: 3px solid var(--minor);
   border: double;
   border-radius: 20px;
   height: 450px;
@@ -67,7 +65,7 @@
 }
 
 .logoCon {
-  padding: 0 10vw 0 10vw;
+  padding: 0 10vw 10vh 10vw;
   grid-area: logoCon;
   display: flex;
   justify-content: space-between;
@@ -127,8 +125,6 @@
     width: 50%;
   }
 
-
- 
 
   .logoCon {
     padding-bottom:8vh;
