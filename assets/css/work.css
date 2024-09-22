@@ -184,6 +184,7 @@
 .URL,
 .sendBtn {
   color: var(--everything);
+  background: none;
   margin: 30px 5px;
   border: 3px solid var(--everything);
   border-style: double;
@@ -264,6 +265,8 @@ button:hover,
     border: 3px solid var(--minor);
     border: double;
     border-radius: 10px;
+    background: none;
+    color:var(--minor);
   }
 
   .sbtn:hover{

@@ -4,23 +4,23 @@
   box-sizing: border-box;
   font-family: "Courier New";
   scroll-behavior: smooth;
+  --everything: #8c4040;
   --dominant: #282828;
   --minor: white;
-  color: var(--minor);
-  --everything: #8c4040;
-  background-color: var(--dominant);
-
-
 }
 
-*{
-  /* --minor: black;
-  --dominant: #d7d0d0; */
 
+
+.navLink{
+  color: inherit;
 }
+
+
+
 
 label{
   border-radius: 20px;
+  margin: 20px;
 }
 
 /* hide the html checkbox */
@@ -33,20 +33,13 @@ input[type="checkbox"]{
 .check{
   position: relative;
   display: block;
-  width: 100px;
-  height: 40px;
-  background: none;
-  border-radius: 20px;
+  width: 40px;
+  height: 20px;
+  background: #080e10;
+  border-radius: 15px;
   cursor: pointer;
   transition: .5s;
   overflow: hidden;
-}
-
-/* background color of switch after changed and adds wite shadow to background */
-input[type="checkbox"]:checked ~ .check{
-  box-shadow:  0 0 0 1500px;
-  background: none;
-
 }
 
 /* character of switch stick before aplication */
@@ -56,8 +49,8 @@ input[type="checkbox"]:checked ~ .check{
   top: 5px;
   left: 5px;
   background: var(--minor);
-  width: 30px;
-  height: 30px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   transition: .5s;
   z-index: 1;
@@ -76,8 +69,8 @@ input[type="checkbox"]:checked ~ .check::before{
   top: 5px;
   right: 5px;
   background: var(--everything);
-  width: 30px;
-  height: 30px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   transition: .5s;
   transform: translateX(50px);
@@ -86,27 +79,7 @@ input[type="checkbox"]:checked ~ .check::before{
 /* bring the appied switch stik into positon */
 input[type="checkbox"]:checked ~ .check::after{
   transform: translateX(0px);
-
 }
-
-
-/* .checkM::before{
-  position: absolute;
-  top: 10px;
-  color: #092c3e;
-  transform: translateX(50px, 0px);
-}
-
-input[type="checkbox"]:checked:checked ~ .checkM{
-  transform: translate(0px)
-}
-.checkM::before{
-  position: absolute;
-  top: 0px;
-  color: white;
-  transform: translateX(50px, 0px);
-} */
-
 
 
 nav {

@@ -1,5 +1,25 @@
 const nav = document.querySelector("#nav");
 
+const checkbox = document.querySelector(".checkbox");
+
+const star = document.querySelector("*");
+
+star.style.background = "#282828";
+star.style.color = "white";
+
+
+// function for day and night mode
+
+checkbox.addEventListener("change", () => {
+  if (checkbox.checked === true) {
+    star.style.background = "#d7d0d0";
+
+    star.style.color = "#282828";
+  } else {
+    star.style.background = "#282828";
+    star.style.color = "white";
+  }
+});
 
 // this is a function for the shrinking navbar
 const scroll = () => {
@@ -124,5 +144,3 @@ const slider = new Carousel(galleryContainer, galleryItems, galleryControls);
 slider.setControls();
 slider.useControls();
 slider.updateGallery(); // accessing our class (Carousel) and then invoking a function (updateGalary)
-
-

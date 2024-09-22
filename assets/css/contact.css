@@ -89,6 +89,7 @@
   border: 3px solid var(--everything);
   border-style: double;
   border-radius: 20px;
+  background: none;
 }
 
 .info .infoBox div {
