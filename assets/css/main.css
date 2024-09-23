@@ -182,5 +182,9 @@ nav:not(:hover) {
     cursor: pointer;
   }
 
+  .navBar li a:hover{
+    color: var(--minor);
+  }
+
 
 }
