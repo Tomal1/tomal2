@@ -166,7 +166,7 @@ nav:not(:hover) {
     position: fixed;
     top: 0;
     right: 0;
-    height: 100vh;
+    height: 100%;
     width: 250px;
     z-index: 5;
     background-color: var(--everything);
@@ -175,7 +175,8 @@ nav:not(:hover) {
     align-items: center;
     justify-content: space-evenly;
     color: var(--dominant);
-    border: 1px solid black;
+    border-left: 3px solid black;
+    
   }
 
   .navBar li{
