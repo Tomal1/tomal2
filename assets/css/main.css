@@ -11,7 +11,7 @@
 
 /* horizontal nav */
 
-.navBar{
+.navBar, .burger{
   display: none;
 }
 
@@ -158,6 +158,10 @@ nav:not(:hover) {
     padding: 0px;
   }
 
+  .burger{
+    display: block;
+  }
+
   .navBar {
     position: fixed;
     top: 0;
@@ -176,8 +180,6 @@ nav:not(:hover) {
 
   .navBar li{
     cursor: pointer;
-    
-
   }
 
 
