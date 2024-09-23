@@ -1,25 +1,36 @@
 const nav = document.querySelector("#nav");
-
 const checkbox = document.querySelector(".checkbox");
-
+const checkbox2 = document.querySelector(".checkbox2");
 const star = document.querySelector("*");
 
-star.style.background = "#282828";
-star.style.color = "white";
 
 
-// function for day and night mode
+const background = () =>{
+  star.style.background = "#282828";
+  star.style.color = "white";
+  // function for day and night mode
 
-checkbox.addEventListener("change", () => {
-  if (checkbox.checked === true) {
-    star.style.background = "#d7d0d0";
+  checkbox.addEventListener("change", () => {
+    if (checkbox.checked) {
+      star.style.background = "#d7d0d0";
+      star.style.color = "#282828";
+    } else {
+      star.style.background = "#282828";
+      star.style.color = "white";
+    }
+  });
 
-    star.style.color = "#282828";
-  } else {
-    star.style.background = "#282828";
-    star.style.color = "white";
-  }
-});
+  checkbox2.addEventListener("change", () => {
+    if (checkbox2.checked) {
+      star.style.background = "#d7d0d0";
+      star.style.color = "#282828";
+    } else {
+      star.style.background = "#282828";
+      star.style.color = "white";
+    }
+  });
+}; background()
+
 
 
 // function for sidebar to navbar
