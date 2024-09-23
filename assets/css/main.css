@@ -57,7 +57,7 @@ input[type="checkbox"] {
   display: block;
   width: 40px;
   height: 20px;
-  background: #080e10;
+  background: var(--dominant);
   border-radius: 15px;
   cursor: pointer;
   transition: 0.5s;
@@ -175,8 +175,8 @@ nav:not(:hover) {
     align-items: center;
     justify-content: space-evenly;
     color: var(--dominant);
-    border-left: 3px solid black;
-    
+    border-left: 5px solid black;
+    border: double;
   }
 
   .navBar li{
@@ -186,6 +186,5 @@ nav:not(:hover) {
   .navBar li a:hover{
     color: var(--minor);
   }
-
 
 }
