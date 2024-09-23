@@ -21,6 +21,23 @@ checkbox.addEventListener("change", () => {
   }
 });
 
+
+// function for sidebar to navbar
+
+const showSideBar=()=>{
+  const sidebar = document.querySelector(".navBar")
+  window.innerWidth >= 1300
+    ? "" 
+    : sidebar.style.display = "flex";
+}
+
+const hideNavBar =()=>{
+  const sidebar = document.querySelector(".navBar")
+  sidebar.style.display = "none";
+}
+
+
+
 // this is a function for the shrinking navbar
 const scroll = () => {
   window.innerWidth >= 1300

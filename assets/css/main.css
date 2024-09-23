@@ -9,28 +9,50 @@
   --minor: white;
 }
 
+/* horizontal nav */
 
+.navBar{
+  display: none;
+}
 
-.navLink{
+nav ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+}
+
+nav li{
   color: inherit;
 }
 
+nav a{
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
 
 
+}
 
-label{
+/* horizontal nav */
+
+
+label {
   border-radius: 20px;
   margin: 20px;
 }
 
 /* hide the html checkbox */
-input[type="checkbox"]{
+input[type="checkbox"] {
   visibility: none;
   display: none;
 }
 
 /* dimension of switch */
-.check{
+.check {
   position: relative;
   display: block;
   width: 40px;
@@ -38,12 +60,12 @@ input[type="checkbox"]{
   background: #080e10;
   border-radius: 15px;
   cursor: pointer;
-  transition: .5s;
+  transition: 0.5s;
   overflow: hidden;
 }
 
 /* character of switch stick before aplication */
-.check::before{
+.check::before {
   content: "";
   position: absolute;
   top: 5px;
@@ -52,18 +74,17 @@ input[type="checkbox"]{
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  transition: .5s;
+  transition: 0.5s;
   z-index: 1;
 }
 
 /* after clicking what direction you want switchh stick to go */
-input[type="checkbox"]:checked ~ .check::before{
+input[type="checkbox"]:checked ~ .check::before {
   transform: translateX(-100px);
-
 }
 
 /* after clicking the switch stick charcteristics of switch */
-.check::after{
+.check::after {
   content: "";
   position: absolute;
   top: 5px;
@@ -72,15 +93,14 @@ input[type="checkbox"]:checked ~ .check::before{
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  transition: .5s;
+  transition: 0.5s;
   transform: translateX(50px);
 }
 
 /* bring the appied switch stik into positon */
-input[type="checkbox"]:checked ~ .check::after{
+input[type="checkbox"]:checked ~ .check::after {
   transform: translateX(0px);
 }
-
 
 nav {
   margin-top: 0px;
@@ -98,8 +118,8 @@ nav {
   outline-offset: 2px;
 }
 
-.downloadLogo{
-  height:20px;
+.downloadLogo {
+  height: 20px;
   background: none;
 }
 
@@ -129,13 +149,36 @@ nav:not(:hover) {
 }
 
 @media (max-width: 1300px) {
-  h1{
+  h1, .sideBar {
     display: none;
   }
 
-  nav{
+  nav {
     justify-content: center;
     padding: 0px;
   }
+
+  .navBar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 5;
+    background-color: var(--everything);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--dominant);
+    border: 1px solid black;
+  }
+
+  .navBar li{
+    cursor: pointer;
+    
+
+  }
+
 
 }
