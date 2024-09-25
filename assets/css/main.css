@@ -7,6 +7,8 @@
   --everything: #8c4040;
   --dominant: #282828;
   --minor: white;
+  --dominant2:#d7d0d0;
+  --minor2: #282828;
 }
 
 /* horizontal nav */
@@ -107,7 +109,7 @@ nav {
   position: fixed;
   background-color: var(--everything);
   height: 10vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;

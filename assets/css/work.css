@@ -227,7 +227,6 @@ button:hover,
     display: flex;
     justify-content: center;
     align-items: center;
-    
   }
 
   #smallerSlider {
@@ -283,8 +282,5 @@ button:hover,
     border: 3px solid var(--everything);
 
   }
-  
- 
-
   
 }
