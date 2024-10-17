@@ -35,8 +35,9 @@ class Carousel {
       {
         message:
           "This is a remake of the original app I had built earlier using only react.js, the original was made using HTML,CSS & vinilla JS",
-        gitHub: "https://tomal1.github.io/rock-paper-scissors/",
-        URL: "https://github.com/Tomal1/rock-paper-scissors"
+        gitHub: "https://github.com/Tomal1/rock-paper-scissors",
+        URL: "https://tomal1.github.io/rock-paper-scissors/"
+        
       },
       {
         message:
