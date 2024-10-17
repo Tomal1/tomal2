@@ -34,9 +34,9 @@ class Carousel {
     const info = [
       {
         message:
-          "Play Rock, Paper and Scissors against the computer, the technolagies used to build this application were: HTML, CSS and vanilla JavaScript. After entering the game click on one of the options (rock, paper or scissors) and the wait for the computer to select its option to dertermin who will become the winner.",
-        gitHub: "https://github.com/Tomal1/Rock-Paper-and-Scissors",
-        URL: "https://tomal1.github.io/Rock-Paper-and-Scissors/",
+          "This is a remake of the original app I had built earlier using only react.js, the original was made using HTML,CSS & vinilla JS",
+        gitHub: "https://tomal1.github.io/rock-paper-scissors/",
+        URL: "https://github.com/Tomal1/rock-paper-scissors"
       },
       {
         message:
