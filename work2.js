@@ -30,7 +30,7 @@ const linkObj = [
 ];
 
 const renderImg = () =>{
-  smallerSlider.innerHTML= linkObj.map(x =>
+  smallerSlider.innerHTML = linkObj.map(x =>
     `<div class="thumCon">
       <div class=imageDiv>
         <img src="${x.src}" class="slides">

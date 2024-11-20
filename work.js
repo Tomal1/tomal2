@@ -29,7 +29,7 @@ class Carousel {
 
     const frontPic = document.querySelector(".gallery-item-3"); //selects first image we see
     //turns that elemnt attribute into a number
-    const target = parseInt(frontPic.getAttribute("data-index"));
+    const target = parseInt(frontPic.getAttribute("data-index")); 
     const info = [
       {
         message:
