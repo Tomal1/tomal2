@@ -4,6 +4,7 @@ const checkbox2 = document.querySelector(".checkbox2");
 const star = document.querySelector("*");
 const GCP = document.querySelector(".gallery-controls-previous");
 const GCN = document.querySelector(".gallery-controls-next");
+const willChange = document.querySelector(".willChange");
 
 const background = () => {
   let dominant = window
@@ -26,6 +27,10 @@ const background = () => {
 
   // function for day and night mode
 
+
+  const x = (arg) =>arg == "a" ? willChange.innerHTML = "DARK-MODE": willChange.innerHTML = "LIGHT-MODE";
+  x();
+
   checkbox.addEventListener("change", () => {
     if (checkbox.checked) {
       star.style.background = dominant2;
@@ -33,12 +38,14 @@ const background = () => {
       GCP.style.color = minor2;
       GCN.style.color = minor2;
       infoDisplay.style.color = minor2;
+      x("a");
     } else {
       star.style.background = dominant;
       star.style.color = minor;
       GCP.style.color = minor;
       GCN.style.color = minor;
       infoDisplay.style.color = minor;
+      x();
     }
   });
 
