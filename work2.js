@@ -9,8 +9,8 @@ const linkObj = [
   },
   {
     src: "./assets/images/RPS.png",
-    gitHub: "https://tomal1.github.io/rock-paper-scissors/",
-    URL: "https://github.com/Tomal1/rock-paper-scissors",
+    gitHub: "https://github.com/Tomal1/rock-paper-scissors",
+    URL: "https://tomal1.github.io/rock-paper-scissors/",
   },
   {
     src: "./assets/images/WDS.png",
