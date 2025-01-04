@@ -3,37 +3,41 @@ const checkbox = document.querySelector(".checkbox");
 const checkbox2 = document.querySelector(".checkbox2");
 const star = document.querySelector("*");
 const GCP = document.querySelector(".gallery-controls-previous");
-const GCN = document.querySelector(".gallery-controls-next")
+const GCN = document.querySelector(".gallery-controls-next");
 
 const background = () => {
-  let dominant = window.getComputedStyle(document.documentElement).getPropertyValue("--dominant");
-  let minor = window.getComputedStyle(document.documentElement).getPropertyValue("--minor");
-  let dominant2 = window.getComputedStyle(document.documentElement).getPropertyValue("--dominant2");
-  let minor2 = window.getComputedStyle(document.documentElement).getPropertyValue("--minor2");
+  let dominant = window
+    .getComputedStyle(document.documentElement)
+    .getPropertyValue("--dominant");
+  let minor = window
+    .getComputedStyle(document.documentElement)
+    .getPropertyValue("--minor");
+  let dominant2 = window
+    .getComputedStyle(document.documentElement)
+    .getPropertyValue("--dominant2");
+  let minor2 = window
+    .getComputedStyle(document.documentElement)
+    .getPropertyValue("--minor2");
 
-  star.style.background = dominant
-  star.style.color = minor
-  GCP.style.color = minor
-  GCN.style.color = minor
-      
-  
+  star.style.background = dominant;
+  star.style.color = minor;
+  GCP.style.color = minor;
+  GCN.style.color = minor;
+
   // function for day and night mode
 
   checkbox.addEventListener("change", () => {
     if (checkbox.checked) {
       star.style.background = dominant2;
       star.style.color = minor2;
-      GCP.style.color = minor2
-      GCN.style.color = minor2
-  
-      
+      GCP.style.color = minor2;
+      GCN.style.color = minor2;
     } else {
       star.style.background = dominant;
       star.style.color = minor;
-      GCP.style.color = minor
-      GCN.style.color = minor
-      infoDisplay.style.color = minor
-      
+      GCP.style.color = minor;
+      GCN.style.color = minor;
+      infoDisplay.style.color = minor;
     }
   });
 

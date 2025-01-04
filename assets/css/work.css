@@ -3,7 +3,7 @@
   display: none;
 }
 
-#work{
+#work {
   height: 100vh;
   width: 100vw;
 }
@@ -176,7 +176,7 @@
   height: fit-content;
 }
 
-.span-div{
+.span-div {
   height: 100px;
   font-size: 20px;
   text-align: center;
@@ -239,48 +239,45 @@ button:hover,
     flex-wrap: wrap;
   }
 
-  .thumCon{
-    margin:10px;
+  .thumCon {
+    margin: 10px;
   }
-  .imageDiv{
+  .imageDiv {
     height: 250px;
     width: 300px;
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     flex-wrap: wrap;
-
   }
 
-  .btnDiv{
+  .btnDiv {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .slides{
+  .slides {
     margin: 10px;
     width: 300px;
     height: auto;
   }
 
-  .sbtn{
+  .sbtn {
     height: 40px;
     width: 100px;
-    margin: 0px 20px ;
+    margin: 0px 20px;
     border: none;
     border: 3px solid var(--minor);
     border: double;
     border-radius: 10px;
     background: none;
-    color:var(--minor);
+    color: var(--minor);
   }
 
-  .sbtn:hover{
+  .sbtn:hover {
     cursor: pointer;
     scale: 1.2px;
     border: 3px solid var(--everything);
-
   }
-  
 }

@@ -99,7 +99,6 @@
 }
 
 .info .infoBox div span {
-  
   min-width: 40px;
   height: 40px;
   color: var(--minor);
@@ -132,7 +131,6 @@
 /* mobile responsive */
 
 @media (max-width: 991px) {
-
   .contactUs {
     padding-top: 10vh;
   }
@@ -150,7 +148,7 @@
   }
 
   .info .infoBox div span {
-    margin:0px;
+    margin: 0px;
   }
 }
 

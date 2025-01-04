@@ -29,14 +29,13 @@ class Carousel {
 
     const frontPic = document.querySelector(".gallery-item-3"); //selects first image we see
     //turns that elemnt attribute into a number
-    const target = parseInt(frontPic.getAttribute("data-index")); 
+    const target = parseInt(frontPic.getAttribute("data-index"));
     const info = [
       {
         message:
           "This is a remake of the original app I had built earlier using only react.js, the original was made using HTML,CSS & vinilla JS",
         gitHub: "https://github.com/Tomal1/rock-paper-scissors",
-        URL: "https://tomal1.github.io/rock-paper-scissors/"
-        
+        URL: "https://tomal1.github.io/rock-paper-scissors/",
       },
       {
         message:
