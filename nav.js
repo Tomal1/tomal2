@@ -27,9 +27,11 @@ const background = () => {
 
   // function for day and night mode
 
-
-  const x = (arg) =>arg == "a" ? willChange.innerHTML = "DARK-MODE": willChange.innerHTML = "LIGHT-MODE";
-  x();
+  const textOnLanding = (arg) =>
+    arg == "a"
+      ? (willChange.innerHTML = "DARK-MODE")
+      : (willChange.innerHTML = "LIGHT-MODE");
+  textOnLanding();
 
   checkbox.addEventListener("change", () => {
     if (checkbox.checked) {
@@ -38,14 +40,14 @@ const background = () => {
       GCP.style.color = minor2;
       GCN.style.color = minor2;
       infoDisplay.style.color = minor2;
-      x("a");
+      textOnLanding("a");
     } else {
       star.style.background = dominant;
       star.style.color = minor;
       GCP.style.color = minor;
       GCN.style.color = minor;
       infoDisplay.style.color = minor;
-      x();
+      textOnLanding();
     }
   });
 
