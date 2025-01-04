@@ -4,6 +4,7 @@ const checkbox2 = document.querySelector(".checkbox2");
 const star = document.querySelector("*");
 const GCP = document.querySelector(".gallery-controls-previous");
 const GCN = document.querySelector(".gallery-controls-next");
+const logos = document.querySelectorAll(".logos");
 
 const background = () => {
   let dominant = window
@@ -18,6 +19,9 @@ const background = () => {
   let minor2 = window
     .getComputedStyle(document.documentElement)
     .getPropertyValue("--minor2");
+  let everything = window
+    .getComputedStyle(document.documentElement)
+    .getPropertyValue("--everything");
 
   star.style.background = dominant;
   star.style.color = minor;
@@ -38,6 +42,8 @@ const background = () => {
       GCP.style.color = minor;
       GCN.style.color = minor;
       infoDisplay.style.color = minor;
+
+
     }
   });
 
