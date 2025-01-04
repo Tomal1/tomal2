@@ -90,6 +90,10 @@
   background: none;
 }
 
+.textInput {
+  color: var(--everything);
+}
+
 .info .infoBox div {
   display: flex;
   align-items: center;

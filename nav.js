@@ -18,9 +18,6 @@ const background = () => {
   let minor2 = window
     .getComputedStyle(document.documentElement)
     .getPropertyValue("--minor2");
-  let everything = window
-    .getComputedStyle(document.documentElement)
-    .getPropertyValue("--everything");
 
   star.style.background = dominant;
   star.style.color = minor;
