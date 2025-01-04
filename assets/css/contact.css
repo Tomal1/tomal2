@@ -1,7 +1,12 @@
+/* #contact{
+
+} */
+
 .contactUs {
   position: relative;
   width: 100vw;
-  padding: 10vh 10% 0px 10%;
+  padding: 0px 10% 0px 10%;
+  margin-bottom: 20px;
 }
 
 .form {
