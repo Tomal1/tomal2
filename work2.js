@@ -19,7 +19,7 @@ const linkObj = [
   },
   {
     src: "./assets/images/weather.png",
-    gitHub: "https://github.com/Tomal1/6_weather_app",
+    gitHub: "https://github.com/Tomal1/Weather_app",
     URL: "https://tomal1.github.io/Weather_app/",
   },
   {
