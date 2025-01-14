@@ -47,7 +47,7 @@ class Carousel {
         message:
           "When a city name is inputted; the next 5 day weather conditions will be forecasted onto little cards situated in the middle of the screen. The app uses the input and appends it to the API url to extrapolate all relevant data (such as temperature, date, wind speed ect..) to populate the cards.",
         gitHub: "https://github.com/Tomal1/6_weather_app",
-        URL: "https://tomal1.github.io/6_weather_app/",
+        URL: "https://tomal1.github.io/Weather_app/",
       },
       {
         message:
